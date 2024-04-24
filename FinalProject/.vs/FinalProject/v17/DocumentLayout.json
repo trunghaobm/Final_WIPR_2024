@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\source\\meta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:source\\meta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\course\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:course\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\avgscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\avgscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\course\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:course\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\avgscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\avgscoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 127,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Meta.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Source\\Meta.cs",
+              "RelativeDocumentMoniker": "Source\\Meta.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Source\\Meta.cs",
+              "RelativeToolTip": "Source\\Meta.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAEwKIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T07:08:26.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentManager.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
+              "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
+              "RelativeToolTip": "Admin\\StudentManager.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAnwPgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:57:46.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentManager.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
+              "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs [Design]",
+              "RelativeToolTip": "Admin\\StudentManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:57:44.788Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddAssignment.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AddAssignment.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs",
+              "RelativeToolTip": "Lecturer\\AddAssignment.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAnwHoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:38:58.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddAssignment.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AddAssignment.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs [Design]",
+              "RelativeToolTip": "Lecturer\\AddAssignment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:35:44.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Main.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Course\\Main.cs",
+              "RelativeDocumentMoniker": "Course\\Main.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Course\\Main.cs",
+              "RelativeToolTip": "Course\\Main.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAUwIAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:27:11.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Course\\Main.cs",
+              "RelativeDocumentMoniker": "Course\\Main.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Course\\Main.cs [Design]",
+              "RelativeToolTip": "Course\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:27:09.089Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AvgScoreManager.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AvgScoreManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AvgScoreManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AvgScoreManager.cs",
+              "RelativeToolTip": "Lecturer\\AvgScoreManager.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwBEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:05:46.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AvgScoreManager.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AvgScoreManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AvgScoreManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AvgScoreManager.cs [Design]",
+              "RelativeToolTip": "Lecturer\\AvgScoreManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:05:45.066Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssignmentManager.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AssignmentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeToolTip": "Lecturer\\AssignmentManager.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAswGAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:05:39.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssignmentManager.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AssignmentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs [Design]",
+              "RelativeToolTip": "Lecturer\\AssignmentManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T07:05:37.955Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
