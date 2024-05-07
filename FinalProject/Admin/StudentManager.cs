@@ -38,7 +38,7 @@ namespace FinalProject.Admin
             //B_REMOVE.Enabled = false;
             P_INFORMATION.Enabled = false; 
             B_ADD_OK.Visible = false;
-            AVATAR.BackgroundImage = Image.FromFile(Path.Combine(System.Windows.Forms.Application.StartupPath, "images", "errAvatar.png"));
+            Meta.SetNullImage(AVATAR);
         }
 
         public void ReLoad()

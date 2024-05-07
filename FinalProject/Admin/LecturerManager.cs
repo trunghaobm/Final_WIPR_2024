@@ -34,6 +34,8 @@ namespace FinalProject.Admin
             DB.Open();
             B_UPDATE.Enabled = false;
             B_REMOVE.Enabled = false;
+            P_INFORMATION.Enabled = false; 
+            Meta.SetNullImage(AVATAR);
         }
 
         public void ReLoad()

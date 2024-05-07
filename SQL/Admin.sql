@@ -192,4 +192,4 @@ EXEC INSERT_ADMIN @EMAIL = N'haoden2@gmail.com', @PASSWORD = N'Admin@123', @ACTI
 
 SELECT * FROM GETTABLE_ADMIN(N'admin@admin.com')
 
-EXEC TryLogin @EMAIL = N'admin@admin.com', @PASSWORD = N'admiffn@123'
+EXEC TRYLOGIN_ADMIN @EMAIL = N'haoden2@gmail.com', @PASSWORD = N'Admin@123'
