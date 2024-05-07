@@ -76,6 +76,7 @@
             this.B_SEARCH.TabStop = false;
             this.B_SEARCH.Text = "Seach";
             this.B_SEARCH.UseVisualStyleBackColor = true;
+            this.B_SEARCH.Click += new System.EventHandler(this.B_SEARCH_Click);
             // 
             // SEARCH
             // 

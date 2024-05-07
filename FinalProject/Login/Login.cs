@@ -38,7 +38,7 @@ namespace FinalProject.Login
         {
             ServerName = "localhost";
             DatabaseName = "Final";
-            TableName = "ACCOUNT";
+            TableName = "ADMIN";
             DB = new Database.Database(ServerName, DatabaseName, TableName);
             registerStudent = new RegisterStudent();
             User = new DataTable();

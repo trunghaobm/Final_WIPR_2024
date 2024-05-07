@@ -62,6 +62,8 @@
             this.B_ADD = new System.Windows.Forms.Button();
             this.EMAIL = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.B_ADD_OK = new System.Windows.Forms.Button();
+            this.L_CHANGEPASS = new System.Windows.Forms.Label();
             this.P_MAIN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_LIST)).BeginInit();
             this.P_LIST_TOPMENU.SuspendLayout();
@@ -134,6 +136,7 @@
             this.DGV_LIST.Name = "DGV_LIST";
             this.DGV_LIST.Size = new System.Drawing.Size(781, 559);
             this.DGV_LIST.TabIndex = 0;
+            this.DGV_LIST.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_LIST_CellClick);
             // 
             // P_LIST_TOPMENU
             // 
@@ -219,6 +222,7 @@
             this.B_TOTAL.TabStop = false;
             this.B_TOTAL.Text = "Total";
             this.B_TOTAL.UseVisualStyleBackColor = true;
+            this.B_TOTAL.Click += new System.EventHandler(this.B_TOTAL_Click);
             // 
             // L_GENDER
             // 
@@ -283,12 +287,12 @@
             // AVATAR
             // 
             this.AVATAR.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AVATAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AVATAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AVATAR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AVATAR.Location = new System.Drawing.Point(148, 393);
             this.AVATAR.Name = "AVATAR";
             this.AVATAR.Size = new System.Drawing.Size(166, 166);
-            this.AVATAR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AVATAR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AVATAR.TabIndex = 4;
             this.AVATAR.TabStop = false;
             this.AVATAR.Click += new System.EventHandler(this.AVATAR_Click);
@@ -342,6 +346,7 @@
             // P_INFORMATION
             // 
             this.P_INFORMATION.BackColor = System.Drawing.Color.Wheat;
+            this.P_INFORMATION.Controls.Add(this.L_CHANGEPASS);
             this.P_INFORMATION.Controls.Add(this.R_FEMALE);
             this.P_INFORMATION.Controls.Add(this.L_AVATAR);
             this.P_INFORMATION.Controls.Add(this.R_MALE);
@@ -371,9 +376,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.B_ADD);
             this.panel1.Controls.Add(this.B_REMOVE);
             this.panel1.Controls.Add(this.B_UPDATE);
-            this.panel1.Controls.Add(this.B_ADD);
+            this.panel1.Controls.Add(this.B_ADD_OK);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 606);
             this.panel1.Name = "panel1";
@@ -389,6 +395,7 @@
             this.B_REMOVE.TabStop = false;
             this.B_REMOVE.Text = "Xóa";
             this.B_REMOVE.UseVisualStyleBackColor = true;
+            this.B_REMOVE.Click += new System.EventHandler(this.B_REMOVE_Click);
             // 
             // B_UPDATE
             // 
@@ -399,6 +406,7 @@
             this.B_UPDATE.TabStop = false;
             this.B_UPDATE.Text = "Sửa";
             this.B_UPDATE.UseVisualStyleBackColor = true;
+            this.B_UPDATE.Click += new System.EventHandler(this.B_UPDATE_Click);
             // 
             // B_ADD
             // 
@@ -427,6 +435,30 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Mail";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // B_ADD_OK
+            // 
+            this.B_ADD_OK.Location = new System.Drawing.Point(111, 29);
+            this.B_ADD_OK.Name = "B_ADD_OK";
+            this.B_ADD_OK.Size = new System.Drawing.Size(93, 41);
+            this.B_ADD_OK.TabIndex = 1;
+            this.B_ADD_OK.TabStop = false;
+            this.B_ADD_OK.Text = "OK";
+            this.B_ADD_OK.UseVisualStyleBackColor = true;
+            this.B_ADD_OK.Click += new System.EventHandler(this.B_ADD_OK_Click);
+            // 
+            // L_CHANGEPASS
+            // 
+            this.L_CHANGEPASS.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.L_CHANGEPASS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_CHANGEPASS.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.L_CHANGEPASS.Location = new System.Drawing.Point(0, 575);
+            this.L_CHANGEPASS.Name = "L_CHANGEPASS";
+            this.L_CHANGEPASS.Size = new System.Drawing.Size(321, 31);
+            this.L_CHANGEPASS.TabIndex = 9;
+            this.L_CHANGEPASS.Text = "Đổi mật khẩu";
+            this.L_CHANGEPASS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.L_CHANGEPASS.Click += new System.EventHandler(this.L_CHANGEPASS_Click);
             // 
             // StudentManager
             // 
@@ -489,5 +521,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox EMAIL;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button B_ADD_OK;
+        private System.Windows.Forms.Label L_CHANGEPASS;
     }
 }

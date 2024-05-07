@@ -75,6 +75,22 @@ namespace FinalProject.Source
             return null;
         }
 
+        public static void LoadImage(PictureBox picturebox,string dir, string fileName)
+        {
+            string appPath = Application.StartupPath;
+            string imageUrl = Path.Combine(appPath, dir, fileName);
+
+            picturebox.Image = Image.FromFile(imageUrl);
+        }
+
+        public static void SetNullImage(PictureBox pictureBox)
+        {
+            pictureBox.Image = null;
+            string appPath = Application.StartupPath;
+            string imgUrl = Path.Combine(appPath, "images", "errAvatar.png");
+            pictureBox.BackgroundImage = Image.FromFile(imgUrl);
+        }
+
         public static bool SaveImage(PictureBox picturebox, string directory)
         {
             Image image = picturebox.Image;
@@ -165,6 +181,14 @@ namespace FinalProject.Source
             Directory.CreateDirectory(Path.Combine(appPath, destDir));
 
             // Sao chép tệp từ srcFile sang destFile
+            File.Copy(srcFile, destFile, true);
+        }
+
+        public static void DownloadFile(string srcDir, string fileName, string destFile)
+        {
+            string appPath =Application.StartupPath;
+            string srcFile = Path.Combine(appPath, srcDir, fileName);
+
             File.Copy(srcFile, destFile, true);
         }
     }

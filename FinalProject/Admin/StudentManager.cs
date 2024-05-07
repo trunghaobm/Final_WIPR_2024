@@ -22,6 +22,8 @@ namespace FinalProject.Admin
         public string DatabaseName { get; set; } = "Final";
         public string TableName { get; set; } = "Student";
         public Database.Database DB { get; set; }
+
+        public string SelectedStudentID { get; set; }
         public StudentManager()
         {
             InitializeComponent();
@@ -32,8 +34,11 @@ namespace FinalProject.Admin
         {
             DB = new Database.Database(ServerName,DatabaseName,TableName);
             DB.Open();
-            B_UPDATE.Enabled = false;
-            B_REMOVE.Enabled = false;
+            //B_UPDATE.Enabled = false;
+            //B_REMOVE.Enabled = false;
+            P_INFORMATION.Enabled = false; 
+            B_ADD_OK.Visible = false;
+            AVATAR.BackgroundImage = Image.FromFile(Path.Combine(System.Windows.Forms.Application.StartupPath, "images", "errAvatar.png"));
         }
 
         public void ReLoad()
@@ -95,7 +100,7 @@ namespace FinalProject.Admin
                 toolTip += "Địa chỉ không được để trống!\n";
                 check = false;
             }
-            if (AVATAR.Image == null)
+            if (AVATAR.Image == null || AVATAR.Text == string.Empty)
             {
                 toolTip += "Ảnh chưa được tải lên!\n";
                 check = false;
@@ -237,15 +242,58 @@ namespace FinalProject.Admin
             
         }
 
+        public void ClearText(Panel parent)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if(control is System.Windows.Forms.TextBox || control is RichTextBox)
+                {
+                    control.Text = string.Empty;
+                }
+                if (control is DateTimePicker)
+                {
+                    DateTimePicker dtp = (DateTimePicker)control;
+                    dtp.Value = DateTime.Now;
+                }
+                if(control is PictureBox)
+                {
+                    PictureBox pictureBox = (PictureBox)control;
+                    pictureBox.Image = null;
+                }
+            }
+        }
+
         private void B_ADD_Click(object sender, EventArgs e)
+        {
+            ClearText(P_INFORMATION);
+            if (B_ADD.Text == "Thêm")
+            {
+                B_ADD_OK.Visible = true;
+                B_UPDATE.Visible = false;
+                B_REMOVE.Visible = false;
+                B_ADD.Text = "Hủy";
+            }
+            else if (B_ADD.Text == "Hủy")
+            {
+                B_ADD_OK.Visible = false;
+                B_UPDATE.Visible = true;
+                B_REMOVE.Visible = true;
+                B_ADD.Text = "Thêm";
+            }
+            /*
+            
+            */
+        }
+
+        public bool AddStudent()
         {
             if (!CheckDataRequire())
             {
-                return;
+                return false;
             }
             if (!CheckDataRefer())
             {
-                return;
+                return false;
             }
 
             DB.Connect();
@@ -255,14 +303,14 @@ namespace FinalProject.Admin
 
             if (DB.InsertRow(dtSource))
             {
-                this.Close();
+                DB.Disconnect();
+                return true;
             }
             else
             {
-                MessageBox.Show("Lỗi không thể đăng ký!");
+                DB.Disconnect();
+                return false;
             }
-
-            DB.Disconnect();
         }
 
         public void GetDataToTable(Panel parent, System.Data.DataTable dataTable)
@@ -326,14 +374,85 @@ namespace FinalProject.Admin
 
         private void MSSV_TextChanged(object sender, EventArgs e)
         {
-            if(MSSV.Text.Trim() == "")
+
+        }
+
+        private void DGV_LIST_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            P_INFORMATION.Enabled = true;
+            int rowIndex = DGV_LIST.SelectedCells[0].RowIndex;
+            SelectedStudentID = DGV_LIST.Rows[rowIndex].Cells["ID"].Value.ToString();
+            foreach(Control control in P_INFORMATION.Controls)
             {
-                EMAIL.Text = "";
+                if (control is System.Windows.Forms.TextBox)
+                {
+                    control.Text = DGV_LIST.Rows[rowIndex].Cells[control.Name].Value.ToString();
+                }
+                if (control is System.Windows.Forms.RichTextBox)
+                {
+                    control.Text = DGV_LIST.Rows[rowIndex].Cells[control.Name].Value.ToString();
+                }
+                if(control is DateTimePicker)
+                {
+                    control.Text = DGV_LIST.Rows[rowIndex].Cells[control.Name].Value.ToString();
+                }
             }
-            else
+            
+            if (DGV_LIST.Rows[rowIndex].Cells["GENDER"].Value.ToString() == "Nam")
             {
-                EMAIL.Text = MSSV.Text + "@student.hcmute.edu.vn";
+                R_MALE.Checked = true;
             }
+            else if (DGV_LIST.Rows[rowIndex].Cells["GENDER"].Value.ToString() == "Nữ")
+            {
+                R_FEMALE.Checked = true;
+            }
+
+            try
+            {
+                //AVATAR.BackgroundImage = null;
+                string fileName = DGV_LIST.Rows[rowIndex].Cells["AVATAR"].Value.ToString();
+                Meta.LoadImage(AVATAR, "avatar\\student", fileName);
+            }
+            catch
+            {
+                AVATAR.Image = null;
+                
+            }
+        }
+
+        private void B_UPDATE_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void B_REMOVE_Click(object sender, EventArgs e)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            dt.Columns.Add("ID");
+            dt.Rows.Add(dt.NewRow());
+            dt.Rows[0][0] = SelectedStudentID;
+
+            DB.DeletetRow(dt);
+
+            ReLoad();
+        }
+
+        private void B_ADD_OK_Click(object sender, EventArgs e)
+        {
+            AddStudent();
+        }
+
+        private void B_TOTAL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L_CHANGEPASS_Click(object sender, EventArgs e)
+        {
+            string name = FIRSTNAME.Text + " " + LASTNAME.Text;
+            ChangePassword changePassword = new ChangePassword(TableName, MSSV.Text, name);
+            changePassword.ShowDialog();
+            ReLoad();
         }
     }
 }

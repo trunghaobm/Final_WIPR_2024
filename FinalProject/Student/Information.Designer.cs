@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.B_REGISTER = new System.Windows.Forms.Button();
+            this.B_UPDATE = new System.Windows.Forms.Button();
             this.LASTNAME = new System.Windows.Forms.TextBox();
             this.L_LASTNAME = new System.Windows.Forms.Label();
             this.L_BIRTHDAY = new System.Windows.Forms.Label();
-            this.B_CLOSE = new System.Windows.Forms.Button();
             this.L_FIRSTNAME = new System.Windows.Forms.Label();
             this.L_MSSV = new System.Windows.Forms.Label();
             this.FIRSTNAME = new System.Windows.Forms.TextBox();
@@ -44,30 +43,26 @@
             this.L_PHONE = new System.Windows.Forms.Label();
             this.ADDRESS = new System.Windows.Forms.TextBox();
             this.PHONE = new System.Windows.Forms.TextBox();
-            this.L_PASSWORD = new System.Windows.Forms.Label();
             this.L_AVATAR = new System.Windows.Forms.Label();
-            this.PASSWORD = new System.Windows.Forms.TextBox();
-            this.PASSWORDRE = new System.Windows.Forms.TextBox();
-            this.L_PASSWORDRE = new System.Windows.Forms.Label();
             this.BIRTHDAY = new System.Windows.Forms.DateTimePicker();
             this.GENDER = new System.Windows.Forms.ComboBox();
             this.AVATAR = new System.Windows.Forms.PictureBox();
             this.P_DATA = new System.Windows.Forms.Panel();
-            this.B_CANCLE = new System.Windows.Forms.Button();
+            this.B_CHANGEPASSWORD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AVATAR)).BeginInit();
             this.P_DATA.SuspendLayout();
             this.SuspendLayout();
             // 
-            // B_REGISTER
+            // B_UPDATE
             // 
-            this.B_REGISTER.Location = new System.Drawing.Point(569, 641);
-            this.B_REGISTER.Margin = new System.Windows.Forms.Padding(6);
-            this.B_REGISTER.Name = "B_REGISTER";
-            this.B_REGISTER.Size = new System.Drawing.Size(174, 53);
-            this.B_REGISTER.TabIndex = 10;
-            this.B_REGISTER.Text = "Đăng ký";
-            this.B_REGISTER.UseVisualStyleBackColor = true;
-            this.B_REGISTER.Click += new System.EventHandler(this.B_CONFIRM_EDIT_Click);
+            this.B_UPDATE.Location = new System.Drawing.Point(569, 559);
+            this.B_UPDATE.Margin = new System.Windows.Forms.Padding(6);
+            this.B_UPDATE.Name = "B_UPDATE";
+            this.B_UPDATE.Size = new System.Drawing.Size(174, 53);
+            this.B_UPDATE.TabIndex = 10;
+            this.B_UPDATE.Text = "Cập nhật";
+            this.B_UPDATE.UseVisualStyleBackColor = true;
+            this.B_UPDATE.Click += new System.EventHandler(this.B_UPDATE_Click);
             // 
             // LASTNAME
             // 
@@ -97,19 +92,6 @@
             this.L_BIRTHDAY.TabIndex = 2;
             this.L_BIRTHDAY.Text = "Ngày sinh";
             this.L_BIRTHDAY.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // B_CLOSE
-            // 
-            this.B_CLOSE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_CLOSE.BackColor = System.Drawing.Color.Red;
-            this.B_CLOSE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_CLOSE.Location = new System.Drawing.Point(857, 0);
-            this.B_CLOSE.Name = "B_CLOSE";
-            this.B_CLOSE.Size = new System.Drawing.Size(25, 25);
-            this.B_CLOSE.TabIndex = 100;
-            this.B_CLOSE.TabStop = false;
-            this.B_CLOSE.UseVisualStyleBackColor = false;
-            this.B_CLOSE.Click += new System.EventHandler(this.B_CLOSE_Click);
             // 
             // L_FIRSTNAME
             // 
@@ -213,16 +195,6 @@
             this.PHONE.TabIndex = 6;
             this.PHONE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PHONE_KeyPress);
             // 
-            // L_PASSWORD
-            // 
-            this.L_PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_PASSWORD.Location = new System.Drawing.Point(12, 550);
-            this.L_PASSWORD.Name = "L_PASSWORD";
-            this.L_PASSWORD.Size = new System.Drawing.Size(315, 38);
-            this.L_PASSWORD.TabIndex = 22;
-            this.L_PASSWORD.Text = "Mật khẩu";
-            this.L_PASSWORD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // L_AVATAR
             // 
             this.L_AVATAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,34 +204,6 @@
             this.L_AVATAR.TabIndex = 23;
             this.L_AVATAR.Text = "Ảnh đại diện";
             this.L_AVATAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // PASSWORD
-            // 
-            this.PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PASSWORD.Location = new System.Drawing.Point(343, 550);
-            this.PASSWORD.Name = "PASSWORD";
-            this.PASSWORD.PasswordChar = '*';
-            this.PASSWORD.Size = new System.Drawing.Size(400, 38);
-            this.PASSWORD.TabIndex = 8;
-            // 
-            // PASSWORDRE
-            // 
-            this.PASSWORDRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PASSWORDRE.Location = new System.Drawing.Point(343, 594);
-            this.PASSWORDRE.Name = "PASSWORDRE";
-            this.PASSWORDRE.PasswordChar = '*';
-            this.PASSWORDRE.Size = new System.Drawing.Size(400, 38);
-            this.PASSWORDRE.TabIndex = 9;
-            // 
-            // L_PASSWORDRE
-            // 
-            this.L_PASSWORDRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_PASSWORDRE.Location = new System.Drawing.Point(12, 594);
-            this.L_PASSWORDRE.Name = "L_PASSWORDRE";
-            this.L_PASSWORDRE.Size = new System.Drawing.Size(315, 38);
-            this.L_PASSWORDRE.TabIndex = 22;
-            this.L_PASSWORDRE.Text = "Nhập lại Mật khẩu";
-            this.L_PASSWORDRE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BIRTHDAY
             // 
@@ -286,10 +230,11 @@
             // AVATAR
             // 
             this.AVATAR.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AVATAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AVATAR.Location = new System.Drawing.Point(343, 365);
             this.AVATAR.Name = "AVATAR";
             this.AVATAR.Size = new System.Drawing.Size(179, 179);
-            this.AVATAR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AVATAR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AVATAR.TabIndex = 24;
             this.AVATAR.TabStop = false;
             this.AVATAR.Click += new System.EventHandler(this.AVATAR_Click);
@@ -297,11 +242,7 @@
             // P_DATA
             // 
             this.P_DATA.Controls.Add(this.BIRTHDAY);
-            this.P_DATA.Controls.Add(this.L_PASSWORDRE);
             this.P_DATA.Controls.Add(this.GENDER);
-            this.P_DATA.Controls.Add(this.L_PASSWORD);
-            this.P_DATA.Controls.Add(this.PASSWORDRE);
-            this.P_DATA.Controls.Add(this.PASSWORD);
             this.P_DATA.Controls.Add(this.L_ADDRESS);
             this.P_DATA.Controls.Add(this.L_AVATAR);
             this.P_DATA.Controls.Add(this.ADDRESS);
@@ -311,14 +252,13 @@
             this.P_DATA.Controls.Add(this.L_GENDER);
             this.P_DATA.Controls.Add(this.EMAIL);
             this.P_DATA.Controls.Add(this.FIRSTNAME);
-            this.P_DATA.Controls.Add(this.B_CLOSE);
             this.P_DATA.Controls.Add(this.L_MSSV);
             this.P_DATA.Controls.Add(this.LASTNAME);
             this.P_DATA.Controls.Add(this.L_LASTNAME);
             this.P_DATA.Controls.Add(this.L_FIRSTNAME);
             this.P_DATA.Controls.Add(this.L_PHONE);
-            this.P_DATA.Controls.Add(this.B_CANCLE);
-            this.P_DATA.Controls.Add(this.B_REGISTER);
+            this.P_DATA.Controls.Add(this.B_CHANGEPASSWORD);
+            this.P_DATA.Controls.Add(this.B_UPDATE);
             this.P_DATA.Controls.Add(this.L_BIRTHDAY);
             this.P_DATA.Controls.Add(this.AVATAR);
             this.P_DATA.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -327,19 +267,17 @@
             this.P_DATA.Size = new System.Drawing.Size(882, 726);
             this.P_DATA.TabIndex = 25;
             // 
-            // B_CANCLE
+            // B_CHANGEPASSWORD
             // 
-            this.B_CANCLE.Location = new System.Drawing.Point(343, 641);
-            this.B_CANCLE.Margin = new System.Windows.Forms.Padding(6);
-            this.B_CANCLE.Name = "B_CANCLE";
-            this.B_CANCLE.Size = new System.Drawing.Size(174, 53);
-            this.B_CANCLE.TabIndex = 10;
-            this.B_CANCLE.TabStop = false;
-            this.B_CANCLE.Text = "Hủy";
-            this.B_CANCLE.UseVisualStyleBackColor = true;
-            this.B_CANCLE.Click += new System.EventHandler(this.B_CANCLE_Click);
+            this.B_CHANGEPASSWORD.Location = new System.Drawing.Point(343, 559);
+            this.B_CHANGEPASSWORD.Margin = new System.Windows.Forms.Padding(6);
+            this.B_CHANGEPASSWORD.Name = "B_CHANGEPASSWORD";
+            this.B_CHANGEPASSWORD.Size = new System.Drawing.Size(174, 53);
+            this.B_CHANGEPASSWORD.TabIndex = 10;
+            this.B_CHANGEPASSWORD.Text = "Đổi mật khẩu";
+            this.B_CHANGEPASSWORD.UseVisualStyleBackColor = true;
             // 
-            // RegisterStudent
+            // Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -349,7 +287,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "RegisterStudent";
+            this.Name = "Information";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.AVATAR)).EndInit();
@@ -361,11 +299,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button B_REGISTER;
+        private System.Windows.Forms.Button B_UPDATE;
         private System.Windows.Forms.TextBox LASTNAME;
         private System.Windows.Forms.Label L_LASTNAME;
         private System.Windows.Forms.Label L_BIRTHDAY;
-        private System.Windows.Forms.Button B_CLOSE;
         private System.Windows.Forms.Label L_FIRSTNAME;
         private System.Windows.Forms.Label L_MSSV;
         private System.Windows.Forms.TextBox FIRSTNAME;
@@ -377,15 +314,11 @@
         private System.Windows.Forms.Label L_PHONE;
         private System.Windows.Forms.TextBox ADDRESS;
         private System.Windows.Forms.TextBox PHONE;
-        private System.Windows.Forms.Label L_PASSWORD;
         private System.Windows.Forms.Label L_AVATAR;
-        private System.Windows.Forms.TextBox PASSWORD;
-        private System.Windows.Forms.TextBox PASSWORDRE;
-        private System.Windows.Forms.Label L_PASSWORDRE;
         private System.Windows.Forms.DateTimePicker BIRTHDAY;
         private System.Windows.Forms.ComboBox GENDER;
         private System.Windows.Forms.PictureBox AVATAR;
         private System.Windows.Forms.Panel P_DATA;
-        private System.Windows.Forms.Button B_CANCLE;
+        private System.Windows.Forms.Button B_CHANGEPASSWORD;
     }
 }

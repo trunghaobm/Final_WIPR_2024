@@ -187,7 +187,7 @@ EXEC INSERT_ADMIN @EMAIL = N'admin@admin.com', @PASSWORD = N'admin@123', @ACTIVE
 EXEC INSERT_ADMIN @EMAIL = N'admin1@admin.com', @PASSWORD = N'admin1@123', @ACTIVE = 0;
 
 -- Thêm hàng 3
-EXEC INSERT_ADMIN @EMAIL = N'haoden2@gmail.com', @PASSWORD = N'admin@123', @ACTIVE = 1;
+EXEC INSERT_ADMIN @EMAIL = N'haoden2@gmail.com', @PASSWORD = N'Admin@123', @ACTIVE = 1;
 
 
 SELECT * FROM GETTABLE_ADMIN(N'admin@admin.com')

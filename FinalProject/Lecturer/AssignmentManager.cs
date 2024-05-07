@@ -99,5 +99,10 @@ namespace FinalProject.Lecturer
             }
             catch { }
         }
+
+        private void B_SEARCH_Click(object sender, EventArgs e)
+        {
+            DGV_DATA.DataSource = Search(SEARCH.Text.Trim());
+        }
     }
 }

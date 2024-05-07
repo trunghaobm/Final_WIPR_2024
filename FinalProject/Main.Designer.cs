@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.P_LEFTMENU = new System.Windows.Forms.Panel();
+            this.B_ADMIN_COURSEREGISTION = new System.Windows.Forms.Button();
+            this.B_STUDENT_ASSIGNMENT = new System.Windows.Forms.Button();
+            this.B_LECTURER_ASSIGNMENT = new System.Windows.Forms.Button();
             this.B_LECTURER_SCORE = new System.Windows.Forms.Button();
             this.B_STUDENT_COURSE = new System.Windows.Forms.Button();
             this.B_STUDENT_SCORE = new System.Windows.Forms.Button();
@@ -36,14 +39,12 @@
             this.B_ADMIN_STUDENT = new System.Windows.Forms.Button();
             this.B_STUDENT_ACCOUNT = new System.Windows.Forms.Button();
             this.B_ADMIN_COURSE = new System.Windows.Forms.Button();
-            this.B_LOGIN = new System.Windows.Forms.Button();
             this.PIC_LOGO = new System.Windows.Forms.PictureBox();
             this.P_TOPMENU = new System.Windows.Forms.Panel();
             this.L_NAME = new System.Windows.Forms.Label();
             this.B_LOGOUT = new System.Windows.Forms.Button();
             this.B_CLOSE = new System.Windows.Forms.Button();
             this.P_MAIN_PARENT = new System.Windows.Forms.Panel();
-            this.B_LECTURER_ASSIGNMENT = new System.Windows.Forms.Button();
             this.P_LEFTMENU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PIC_LOGO)).BeginInit();
             this.P_TOPMENU.SuspendLayout();
@@ -51,7 +52,10 @@
             // 
             // P_LEFTMENU
             // 
+            this.P_LEFTMENU.AutoScroll = true;
             this.P_LEFTMENU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
+            this.P_LEFTMENU.Controls.Add(this.B_ADMIN_COURSEREGISTION);
+            this.P_LEFTMENU.Controls.Add(this.B_STUDENT_ASSIGNMENT);
             this.P_LEFTMENU.Controls.Add(this.B_LECTURER_ASSIGNMENT);
             this.P_LEFTMENU.Controls.Add(this.B_LECTURER_SCORE);
             this.P_LEFTMENU.Controls.Add(this.B_STUDENT_COURSE);
@@ -60,13 +64,61 @@
             this.P_LEFTMENU.Controls.Add(this.B_ADMIN_STUDENT);
             this.P_LEFTMENU.Controls.Add(this.B_STUDENT_ACCOUNT);
             this.P_LEFTMENU.Controls.Add(this.B_ADMIN_COURSE);
-            this.P_LEFTMENU.Controls.Add(this.B_LOGIN);
             this.P_LEFTMENU.Controls.Add(this.PIC_LOGO);
             this.P_LEFTMENU.Dock = System.Windows.Forms.DockStyle.Left;
             this.P_LEFTMENU.Location = new System.Drawing.Point(0, 0);
             this.P_LEFTMENU.Name = "P_LEFTMENU";
             this.P_LEFTMENU.Size = new System.Drawing.Size(150, 659);
             this.P_LEFTMENU.TabIndex = 0;
+            // 
+            // B_ADMIN_COURSEREGISTION
+            // 
+            this.B_ADMIN_COURSEREGISTION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(45)))), ((int)(((byte)(147)))));
+            this.B_ADMIN_COURSEREGISTION.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_ADMIN_COURSEREGISTION.Dock = System.Windows.Forms.DockStyle.Top;
+            this.B_ADMIN_COURSEREGISTION.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B_ADMIN_COURSEREGISTION.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_ADMIN_COURSEREGISTION.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.B_ADMIN_COURSEREGISTION.Location = new System.Drawing.Point(0, 600);
+            this.B_ADMIN_COURSEREGISTION.Name = "B_ADMIN_COURSEREGISTION";
+            this.B_ADMIN_COURSEREGISTION.Size = new System.Drawing.Size(150, 50);
+            this.B_ADMIN_COURSEREGISTION.TabIndex = 12;
+            this.B_ADMIN_COURSEREGISTION.TabStop = false;
+            this.B_ADMIN_COURSEREGISTION.Text = "Đăng ký khóa học";
+            this.B_ADMIN_COURSEREGISTION.UseVisualStyleBackColor = false;
+            this.B_ADMIN_COURSEREGISTION.Click += new System.EventHandler(this.B_ADMIN_COURSEREGISTION_Click);
+            // 
+            // B_STUDENT_ASSIGNMENT
+            // 
+            this.B_STUDENT_ASSIGNMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(182)))), ((int)(((byte)(217)))));
+            this.B_STUDENT_ASSIGNMENT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_STUDENT_ASSIGNMENT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.B_STUDENT_ASSIGNMENT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B_STUDENT_ASSIGNMENT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.B_STUDENT_ASSIGNMENT.Location = new System.Drawing.Point(0, 550);
+            this.B_STUDENT_ASSIGNMENT.Name = "B_STUDENT_ASSIGNMENT";
+            this.B_STUDENT_ASSIGNMENT.Size = new System.Drawing.Size(150, 50);
+            this.B_STUDENT_ASSIGNMENT.TabIndex = 11;
+            this.B_STUDENT_ASSIGNMENT.TabStop = false;
+            this.B_STUDENT_ASSIGNMENT.Text = "Bài tập";
+            this.B_STUDENT_ASSIGNMENT.UseVisualStyleBackColor = false;
+            this.B_STUDENT_ASSIGNMENT.Click += new System.EventHandler(this.B_STUDENT_ASSIGNMENT_Click);
+            // 
+            // B_LECTURER_ASSIGNMENT
+            // 
+            this.B_LECTURER_ASSIGNMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.B_LECTURER_ASSIGNMENT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_LECTURER_ASSIGNMENT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.B_LECTURER_ASSIGNMENT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B_LECTURER_ASSIGNMENT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.B_LECTURER_ASSIGNMENT.Location = new System.Drawing.Point(0, 500);
+            this.B_LECTURER_ASSIGNMENT.Name = "B_LECTURER_ASSIGNMENT";
+            this.B_LECTURER_ASSIGNMENT.Size = new System.Drawing.Size(150, 50);
+            this.B_LECTURER_ASSIGNMENT.TabIndex = 10;
+            this.B_LECTURER_ASSIGNMENT.TabStop = false;
+            this.B_LECTURER_ASSIGNMENT.Text = "Bài tập";
+            this.B_LECTURER_ASSIGNMENT.UseVisualStyleBackColor = false;
+            this.B_LECTURER_ASSIGNMENT.Click += new System.EventHandler(this.B_LECTURER_ASSIGNMENT_Click);
             // 
             // B_LECTURER_SCORE
             // 
@@ -179,22 +231,6 @@
             this.B_ADMIN_COURSE.UseVisualStyleBackColor = false;
             this.B_ADMIN_COURSE.Click += new System.EventHandler(this.B_ADMIN_COURSE_Click);
             // 
-            // B_LOGIN
-            // 
-            this.B_LOGIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(1)))));
-            this.B_LOGIN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B_LOGIN.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.B_LOGIN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_LOGIN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_LOGIN.Location = new System.Drawing.Point(0, 609);
-            this.B_LOGIN.Name = "B_LOGIN";
-            this.B_LOGIN.Size = new System.Drawing.Size(150, 50);
-            this.B_LOGIN.TabIndex = 2;
-            this.B_LOGIN.TabStop = false;
-            this.B_LOGIN.Text = "Đăng nhập";
-            this.B_LOGIN.UseVisualStyleBackColor = false;
-            this.B_LOGIN.Click += new System.EventHandler(this.B_LOGIN_Click);
-            // 
             // PIC_LOGO
             // 
             this.PIC_LOGO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -263,22 +299,6 @@
             this.P_MAIN_PARENT.Size = new System.Drawing.Size(1046, 634);
             this.P_MAIN_PARENT.TabIndex = 2;
             // 
-            // B_LECTURER_ASSIGNMENT
-            // 
-            this.B_LECTURER_ASSIGNMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.B_LECTURER_ASSIGNMENT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B_LECTURER_ASSIGNMENT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.B_LECTURER_ASSIGNMENT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_LECTURER_ASSIGNMENT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_LECTURER_ASSIGNMENT.Location = new System.Drawing.Point(0, 500);
-            this.B_LECTURER_ASSIGNMENT.Name = "B_LECTURER_ASSIGNMENT";
-            this.B_LECTURER_ASSIGNMENT.Size = new System.Drawing.Size(150, 50);
-            this.B_LECTURER_ASSIGNMENT.TabIndex = 10;
-            this.B_LECTURER_ASSIGNMENT.TabStop = false;
-            this.B_LECTURER_ASSIGNMENT.Text = "Bài tập";
-            this.B_LECTURER_ASSIGNMENT.UseVisualStyleBackColor = false;
-            this.B_LECTURER_ASSIGNMENT.Click += new System.EventHandler(this.B_LECTURER_ASSIGNMENT_Click);
-            // 
             // F_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -310,7 +330,6 @@
         private System.Windows.Forms.PictureBox PIC_LOGO;
         private System.Windows.Forms.Button B_STUDENT_ACCOUNT;
         private System.Windows.Forms.Button B_ADMIN_COURSE;
-        private System.Windows.Forms.Button B_LOGIN;
         private System.Windows.Forms.Panel P_TOPMENU;
         private System.Windows.Forms.Button B_CLOSE;
         private System.Windows.Forms.Button B_LOGOUT;
@@ -322,6 +341,8 @@
         private System.Windows.Forms.Button B_STUDENT_COURSE;
         private System.Windows.Forms.Button B_LECTURER_SCORE;
         private System.Windows.Forms.Button B_LECTURER_ASSIGNMENT;
+        private System.Windows.Forms.Button B_STUDENT_ASSIGNMENT;
+        private System.Windows.Forms.Button B_ADMIN_COURSEREGISTION;
     }
 }
 

@@ -36,7 +36,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.B_ADD = new System.Windows.Forms.Button();
             this.P_INFORMATION = new System.Windows.Forms.Panel();
+            this.EMAIL = new System.Windows.Forms.TextBox();
             this.PHONE = new System.Windows.Forms.TextBox();
+            this.L_EMAIL = new System.Windows.Forms.Label();
             this.L_GENDER = new System.Windows.Forms.Label();
             this.L_PHONE = new System.Windows.Forms.Label();
             this.L_LASTNAME = new System.Windows.Forms.Label();
@@ -100,10 +102,11 @@
             this.B_UPDATE.TabStop = false;
             this.B_UPDATE.Text = "Sửa";
             this.B_UPDATE.UseVisualStyleBackColor = true;
+            this.B_UPDATE.Click += new System.EventHandler(this.B_UPDATE_Click);
             // 
             // L_AVATAR
             // 
-            this.L_AVATAR.Location = new System.Drawing.Point(12, 358);
+            this.L_AVATAR.Location = new System.Drawing.Point(12, 394);
             this.L_AVATAR.Name = "L_AVATAR";
             this.L_AVATAR.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.L_AVATAR.Size = new System.Drawing.Size(131, 23);
@@ -113,7 +116,7 @@
             // 
             // L_ADDRESS
             // 
-            this.L_ADDRESS.Location = new System.Drawing.Point(12, 224);
+            this.L_ADDRESS.Location = new System.Drawing.Point(12, 260);
             this.L_ADDRESS.Name = "L_ADDRESS";
             this.L_ADDRESS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.L_ADDRESS.Size = new System.Drawing.Size(131, 23);
@@ -142,6 +145,7 @@
             this.B_ADD.TabStop = false;
             this.B_ADD.Text = "Thêm";
             this.B_ADD.UseVisualStyleBackColor = true;
+            this.B_ADD.Click += new System.EventHandler(this.B_ADD_Click);
             // 
             // P_INFORMATION
             // 
@@ -149,7 +153,9 @@
             this.P_INFORMATION.Controls.Add(this.L_AVATAR);
             this.P_INFORMATION.Controls.Add(this.L_ADDRESS);
             this.P_INFORMATION.Controls.Add(this.panel1);
+            this.P_INFORMATION.Controls.Add(this.EMAIL);
             this.P_INFORMATION.Controls.Add(this.PHONE);
+            this.P_INFORMATION.Controls.Add(this.L_EMAIL);
             this.P_INFORMATION.Controls.Add(this.L_GENDER);
             this.P_INFORMATION.Controls.Add(this.L_PHONE);
             this.P_INFORMATION.Controls.Add(this.L_BIRTHDAY);
@@ -169,6 +175,13 @@
             this.P_INFORMATION.Size = new System.Drawing.Size(321, 647);
             this.P_INFORMATION.TabIndex = 6;
             // 
+            // EMAIL
+            // 
+            this.EMAIL.Location = new System.Drawing.Point(149, 177);
+            this.EMAIL.Name = "EMAIL";
+            this.EMAIL.Size = new System.Drawing.Size(166, 29);
+            this.EMAIL.TabIndex = 4;
+            // 
             // PHONE
             // 
             this.PHONE.Location = new System.Drawing.Point(149, 142);
@@ -176,9 +189,19 @@
             this.PHONE.Size = new System.Drawing.Size(166, 29);
             this.PHONE.TabIndex = 4;
             // 
+            // L_EMAIL
+            // 
+            this.L_EMAIL.Location = new System.Drawing.Point(15, 181);
+            this.L_EMAIL.Name = "L_EMAIL";
+            this.L_EMAIL.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.L_EMAIL.Size = new System.Drawing.Size(131, 23);
+            this.L_EMAIL.TabIndex = 5;
+            this.L_EMAIL.Text = "Email";
+            this.L_EMAIL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // L_GENDER
             // 
-            this.L_GENDER.Location = new System.Drawing.Point(15, 183);
+            this.L_GENDER.Location = new System.Drawing.Point(15, 219);
             this.L_GENDER.Name = "L_GENDER";
             this.L_GENDER.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.L_GENDER.Size = new System.Drawing.Size(131, 23);
@@ -229,15 +252,16 @@
             // AVATAR
             // 
             this.AVATAR.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AVATAR.Location = new System.Drawing.Point(149, 358);
+            this.AVATAR.Location = new System.Drawing.Point(149, 394);
             this.AVATAR.Name = "AVATAR";
             this.AVATAR.Size = new System.Drawing.Size(166, 166);
             this.AVATAR.TabIndex = 4;
             this.AVATAR.TabStop = false;
+            this.AVATAR.Click += new System.EventHandler(this.AVATAR_Click);
             // 
             // ADDRESS
             // 
-            this.ADDRESS.Location = new System.Drawing.Point(149, 220);
+            this.ADDRESS.Location = new System.Drawing.Point(149, 256);
             this.ADDRESS.Name = "ADDRESS";
             this.ADDRESS.Size = new System.Drawing.Size(166, 132);
             this.ADDRESS.TabIndex = 7;
@@ -247,7 +271,7 @@
             // 
             this.P_GENDER.Controls.Add(this.R_FEMALE);
             this.P_GENDER.Controls.Add(this.R_MALE);
-            this.P_GENDER.Location = new System.Drawing.Point(149, 177);
+            this.P_GENDER.Location = new System.Drawing.Point(149, 213);
             this.P_GENDER.Name = "P_GENDER";
             this.P_GENDER.Size = new System.Drawing.Size(166, 37);
             this.P_GENDER.TabIndex = 2;
@@ -326,6 +350,7 @@
             this.B_RELOAD.TabStop = false;
             this.B_RELOAD.Text = "Tải lại";
             this.B_RELOAD.UseVisualStyleBackColor = true;
+            this.B_RELOAD.Click += new System.EventHandler(this.B_RELOAD_Click);
             // 
             // B_IMPORT
             // 
@@ -337,6 +362,7 @@
             this.B_IMPORT.TabStop = false;
             this.B_IMPORT.Text = "Import";
             this.B_IMPORT.UseVisualStyleBackColor = true;
+            this.B_IMPORT.Click += new System.EventHandler(this.B_IMPORT_Click);
             // 
             // B_SEARCH
             // 
@@ -470,5 +496,7 @@
         private System.Windows.Forms.Panel P_MAIN;
         private System.Windows.Forms.Panel P_LIST_CONTROL;
         private System.Windows.Forms.Button B_TOTAL;
+        private System.Windows.Forms.TextBox EMAIL;
+        private System.Windows.Forms.Label L_EMAIL;
     }
 }

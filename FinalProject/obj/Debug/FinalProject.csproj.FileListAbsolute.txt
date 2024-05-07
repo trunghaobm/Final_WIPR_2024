@@ -26,3 +26,7 @@ F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Lecturer.Avg
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Course.ResultManager.resources
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Lecturer.AssignmentManager.resources
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Lecturer.AddAssignment.resources
+F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Student.Assignment.resources
+F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Admin.ChangePassword.resources
+F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Student.ChangePassword.resources
+F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Admin.CourseRegistration.resources

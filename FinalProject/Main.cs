@@ -27,6 +27,9 @@ namespace FinalProject
         public Admin.LecturerManager lecturerManager;
         public Lecturer.AvgScoreManager avgManager;
         public Lecturer.AssignmentManager assignmentManager;
+        public Student.Assignment studentAssignment;
+        public Student.Information studentInformation;
+        public Admin.CourseRegistration courseRegistration;
         public string studentID;
 
         public F_Main()
@@ -78,13 +81,20 @@ namespace FinalProject
                 case Source.Role.Student:
                     studentID = User.Rows[0]["ID"].ToString();
                     imgPath = Path.Combine(appPath, "avatar", "student", user.Rows[0]["AVATAR"].ToString());
-                    PIC_LOGO.Image = Image.FromFile(imgPath);
-                    B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + Role.ToString();
+                    try
+                    {
+                        PIC_LOGO.Image = Image.FromFile(imgPath);
+                    }
+                    catch
+                    {
+                        PIC_LOGO.Image = null;
+                    }
+                    //B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + "-" + Role.ToString();
                     break;
                 case Source.Role.Lecturer:
                     imgPath = Path.Combine(appPath, "avatar", "lecturer", user.Rows[0]["AVATAR"].ToString());
                     PIC_LOGO.Image = Image.FromFile(imgPath);
-                    B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + Role.ToString();
+                    //B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + "-" + Role.ToString();
                     break;
                 default: break;
 
@@ -173,42 +183,15 @@ namespace FinalProject
 
         private void B_STUDENT_ACCOUNT_Click(object sender, EventArgs e)
         {
-            switch (this.Role)
-            {
-                case Source.Role.None: break;
-
-                case Source.Role.Admin: break;
-
-                case Source.Role.Student:
-                    break;
-
-                case Source.Role.Lecturer: break;
-
-                default: break;
-            }
+            studentInformation = new Student.Information(User);
+            studentInformation.Size = P_MAIN_PARENT.Size;
+            Meta.OpenChileForm(P_MAIN_PARENT, studentInformation);
         }
 
         private void B_ADMIN_COURSE_Click(object sender, EventArgs e)
         {
-            switch (this.Role)
-            {
-                case Source.Role.None: break;
-
-                case Source.Role.Admin:
-                    Course.Size = P_MAIN_PARENT.Size;
-                    Source.Meta.OpenChileForm(P_MAIN_PARENT, this.Course); 
-                    break;
-
-                case Source.Role.Student:
-                    this.studentCourseManagement = new Student.CourseManagement(User.Rows[0]["ID"].ToString());
-                    studentCourseManagement.Size = P_MAIN_PARENT.Size;
-                    Source.Meta.OpenChileForm(P_MAIN_PARENT, this.studentCourseManagement); 
-                    break;
-
-                case Source.Role.Lecturer:break; 
-                
-                default: break;
-            }
+            Course.Size = P_MAIN_PARENT.Size;
+            Source.Meta.OpenChileForm(P_MAIN_PARENT, this.Course); 
         }
 
         private void B_ADMIN_STUDENT_Click(object sender, EventArgs e)
@@ -244,6 +227,20 @@ namespace FinalProject
             assignmentManager = new Lecturer.AssignmentManager();
             assignmentManager.Size = P_MAIN_PARENT.Size;
             Meta.OpenChileForm(P_MAIN_PARENT, assignmentManager);
+        }
+
+        private void B_STUDENT_ASSIGNMENT_Click(object sender, EventArgs e)
+        {
+            studentAssignment = new Student.Assignment(User.Rows[0]["ID"].ToString());
+            studentAssignment.Size = P_MAIN_PARENT.Size;
+            Meta.OpenChileForm(P_MAIN_PARENT, studentAssignment);
+        }
+
+        private void B_ADMIN_COURSEREGISTION_Click(object sender, EventArgs e)
+        {
+            courseRegistration = new Admin.CourseRegistration();
+            courseRegistration.Size = P_MAIN_PARENT.Size;
+            Meta.OpenChileForm(P_MAIN_PARENT, courseRegistration);
         }
     }
 }

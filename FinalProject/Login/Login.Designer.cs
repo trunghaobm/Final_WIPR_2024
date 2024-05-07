@@ -73,7 +73,7 @@
             this.PASSWORD.PasswordChar = '*';
             this.PASSWORD.Size = new System.Drawing.Size(267, 38);
             this.PASSWORD.TabIndex = 1;
-            this.PASSWORD.Text = "admin@123";
+            this.PASSWORD.Text = "Admin@123";
             // 
             // label1
             // 

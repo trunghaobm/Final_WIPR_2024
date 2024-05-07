@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CourseRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseRegistration.Designer.cs">
+      <DependentUpon>CourseRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\LecturerManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,18 @@
     <Compile Include="Source\Email.cs" />
     <Compile Include="Source\Permission.cs" />
     <Compile Include="Source\Meta.cs" />
+    <Compile Include="Student\Assigment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Assigment.Designer.cs">
+      <DependentUpon>Assigment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\CourseRegistion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +195,12 @@
     <Compile Include="Student\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CourseRegistration.resx">
+      <DependentUpon>CourseRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\LecturerManager.resx">
       <DependentUpon>LecturerManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +258,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Student\Assigment.resx">
+      <DependentUpon>Assigment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\CourseManagement.resx">
       <DependentUpon>CourseManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,9 +286,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Login\SaveLog.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assignment\" />
