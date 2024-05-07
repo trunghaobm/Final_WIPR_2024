@@ -1,4 +1,4 @@
-﻿namespace FinalProject.Student
+﻿namespace FinalProject.Lecturer
 {
     partial class ChangePassword
     {

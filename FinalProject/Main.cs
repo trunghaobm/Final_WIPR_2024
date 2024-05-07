@@ -21,15 +21,21 @@ namespace FinalProject
         public Source.Role Role;
         public Login.Login login;
         public DataTable User;
+
         public Course.Main Course;
-        public Student.CourseManagement studentCourseManagement;
+
         public Admin.StudentManager studentManager;
         public Admin.LecturerManager lecturerManager;
-        public Lecturer.AvgScoreManager avgManager;
-        public Lecturer.AssignmentManager assignmentManager;
+        public Admin.CourseRegistrationStudenLlist courseRegistrationStudenLlist;
+
         public Student.Assignment studentAssignment;
         public Student.Information studentInformation;
-        public Admin.CourseRegistrationStudenLlist courseRegistrationStudenLlist;
+        public Student.CourseManagement studentCourseManagement;
+
+        public Lecturer.AvgScoreManager avgManager;
+        public Lecturer.AssignmentManager assignmentManager;
+        public Lecturer.Information lecturerinformation;
+
         public string studentID;
 
         public F_Main()
@@ -87,14 +93,20 @@ namespace FinalProject
                     }
                     catch
                     {
-                        PIC_LOGO.Image = null;
+                        Meta.SetNullImage(PIC_LOGO);
                     }
                     //B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + "-" + Role.ToString();
                     break;
                 case Source.Role.Lecturer:
-                    imgPath = Path.Combine(appPath, "avatar", "lecturer", user.Rows[0]["AVATAR"].ToString());
-                    PIC_LOGO.Image = Image.FromFile(imgPath);
-                    //B_LOGIN.Text = L_NAME.Text = user.Rows[0]["FIRSTNAME"].ToString() + " " + user.Rows[0]["LASTNAME"].ToString() + "-" + Role.ToString();
+                    try
+                    {
+                        imgPath = Path.Combine(appPath, "avatar", "lecturer", user.Rows[0]["AVATAR"].ToString());
+                        PIC_LOGO.Image = Image.FromFile(imgPath);
+                    }
+                    catch
+                    {
+                        Meta.SetNullImage(PIC_LOGO);
+                    }
                     break;
                 default: break;
 
@@ -163,9 +175,17 @@ namespace FinalProject
         {
         }
 
-        private void F_Main_Load(object sender, EventArgs e)
+        private async void F_Main_Load(object sender, EventArgs e)
         {
-            
+            //await Task.Run(() =>
+            //{
+            //    // Hàm ReloadUser sẽ chạy liên tục trong luồng mới
+            //    while (true)
+            //    {
+            //        ReloadUser();
+            //        System.Threading.Thread.Sleep(1); // Đợi 1 giây trước khi thực hiện lại
+            //    }
+            //});
         }
 
         private void B_LOGOUT_Click(object sender, EventArgs e)
@@ -242,6 +262,45 @@ namespace FinalProject
             courseRegistrationStudenLlist = new Admin.CourseRegistrationStudenLlist();
             courseRegistrationStudenLlist.Size = P_MAIN_PARENT.Size;
             Meta.OpenChileForm(P_MAIN_PARENT, courseRegistrationStudenLlist);
+        }
+
+        private void B_LECTURER_INFOMATION_Click(object sender, EventArgs e)
+        {
+            lecturerinformation = new Lecturer.Information(User);
+            lecturerinformation.Size = P_MAIN_PARENT.Size;
+            Meta.OpenChileForm(P_MAIN_PARENT, lecturerinformation);
+        }
+
+        public void ReloadUser()
+        {
+            Database.Database DB = new Database.Database();
+            DB.ServerName = "localhost";
+            DB.DatabaseName = "Final";
+            DB.Open();
+
+
+            switch(Role)
+            {
+                case Role.Admin: break;
+                case Role.Student:
+                    DB.TableName = "STUDENT";
+                    break;
+                case Role.Lecturer:
+                    DB.TableName = "LECTURER";
+                    break;
+
+                default: break;
+            }
+
+            if(!string.IsNullOrWhiteSpace(DB.TableName) && !string.IsNullOrEmpty(DB.TableName))
+            {
+                User = DB.GetTable(User.Rows[0]["EMAIL"].ToString());
+            }
+            LoadUser(User);
+        }
+        private void TIMER_RELOAD_Tick(object sender, EventArgs e)
+        {
+            ReloadUser();
         }
     }
 }

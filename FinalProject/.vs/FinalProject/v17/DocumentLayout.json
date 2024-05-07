@@ -3,56 +3,44 @@
   "WorkspaceRootPath": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\login\\registerstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\registerstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\login\\registerlecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\registerlecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\login\\adminregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\adminregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\student\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\student\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\student\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\changepassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\changepassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\infomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\infomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\infomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\infomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,157 +50,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CourseRegistrationStudenLlist.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
-              "RelativeDocumentMoniker": "Admin\\CourseRegistrationStudenLlist.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
-              "RelativeToolTip": "Admin\\CourseRegistrationStudenLlist.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAnwEcAAAAsAAAA",
+              "DocumentIndex": 0,
+              "Title": "RegisterStudent.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\RegisterStudent.cs",
+              "RelativeDocumentMoniker": "Login\\RegisterStudent.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\RegisterStudent.cs [Design]",
+              "RelativeToolTip": "Login\\RegisterStudent.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:38:24.352Z"
+              "WhenOpened": "2024-05-07T06:49:37.67Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CourseRegistrationStudenLlist.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
-              "RelativeDocumentMoniker": "Admin\\CourseRegistrationStudenLlist.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs [Design]",
-              "RelativeToolTip": "Admin\\CourseRegistrationStudenLlist.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "RegisterLecturer.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\RegisterLecturer.cs",
+              "RelativeDocumentMoniker": "Login\\RegisterLecturer.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\RegisterLecturer.cs [Design]",
+              "RelativeToolTip": "Login\\RegisterLecturer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:37:57.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentManager.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
-              "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
-              "RelativeToolTip": "Admin\\StudentManager.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:36:46.459Z"
+              "WhenOpened": "2024-05-07T06:49:30.033Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentManager.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
-              "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs [Design]",
-              "RelativeToolTip": "Admin\\StudentManager.cs [Design]",
+              "Title": "AdminRegister.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\AdminRegister.cs",
+              "RelativeDocumentMoniker": "Login\\AdminRegister.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\AdminRegister.cs [Design]",
+              "RelativeToolTip": "Login\\AdminRegister.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:36:41.163Z"
+              "WhenOpened": "2024-05-07T06:49:28.047Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Information.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Information.cs",
-              "RelativeDocumentMoniker": "Student\\Information.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Information.cs",
-              "RelativeToolTip": "Student\\Information.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAuwEwAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T02:53:31.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Information.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Information.cs",
-              "RelativeDocumentMoniker": "Student\\Information.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Information.cs [Design]",
-              "RelativeToolTip": "Student\\Information.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T02:53:30.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddAssignment.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs",
-              "RelativeDocumentMoniker": "Lecturer\\AddAssignment.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs [Design]",
-              "RelativeToolTip": "Lecturer\\AddAssignment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T08:30:00.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "Login\\Login.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs",
-              "RelativeToolTip": "Login\\Login.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T08:18:56.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs",
               "RelativeDocumentMoniker": "Login\\Login.cs",
               "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs [Design]",
               "RelativeToolTip": "Login\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T15:06:47.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AQIAAK4AAAAAAAAAAAAewMAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:54:29.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs [Design]",
-              "RelativeToolTip": "Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:53:20.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourseRegistration.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs",
-              "RelativeDocumentMoniker": "Admin\\CourseRegistration.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs",
-              "RelativeToolTip": "Admin\\CourseRegistration.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAtwD8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:27:28.995Z"
+              "WhenOpened": "2024-05-07T06:49:14.907Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CourseRegistration.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs",
-              "RelativeDocumentMoniker": "Admin\\CourseRegistration.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs [Design]",
-              "RelativeToolTip": "Admin\\CourseRegistration.cs [Design]",
+              "Title": "ChangePassword.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\ChangePassword.cs",
+              "RelativeDocumentMoniker": "Student\\ChangePassword.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\ChangePassword.cs [Design]",
+              "RelativeToolTip": "Student\\ChangePassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:22:54.764Z"
+              "WhenOpened": "2024-05-07T06:48:38.863Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Infomation.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\Infomation.cs",
+              "RelativeDocumentMoniker": "Lecturer\\Infomation.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\Infomation.cs",
+              "RelativeToolTip": "Lecturer\\Infomation.cs",
+              "ViewState": "AQIAAP0AAAAAAAAAAAAawAkBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T06:36:07.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Infomation.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\Infomation.cs",
+              "RelativeDocumentMoniker": "Lecturer\\Infomation.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\Infomation.cs [Design]",
+              "RelativeToolTip": "Lecturer\\Infomation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T06:36:05.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangePassword.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.cs",
+              "RelativeDocumentMoniker": "Lecturer\\ChangePassword.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.cs",
+              "RelativeToolTip": "Lecturer\\ChangePassword.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAMwCcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T06:35:19.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChangePassword.Designer.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.Designer.cs",
+              "RelativeDocumentMoniker": "Lecturer\\ChangePassword.Designer.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.Designer.cs",
+              "RelativeToolTip": "Lecturer\\ChangePassword.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAnwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T06:35:02.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChangePassword.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.cs",
+              "RelativeDocumentMoniker": "Lecturer\\ChangePassword.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\ChangePassword.cs [Design]",
+              "RelativeToolTip": "Lecturer\\ChangePassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T06:34:56.983Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

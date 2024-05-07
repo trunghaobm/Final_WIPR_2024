@@ -19,7 +19,7 @@ namespace FinalProject.Student
     {
         public Role Role { get; set; } = Role.None;
         public Database.Database DB { get; set; }
-        public DataTable DataTable { get; set; }
+        public DataTable User { get; set; }
         public string ServerName { get; set; }
         public string DatabaseName { get; set; }
         public string TableName { get; set; }
@@ -32,11 +32,11 @@ namespace FinalProject.Student
             FirstLoad();
         }
 
-        public Information(DataTable dataTable)
+        public Information(DataTable user)
         {
             InitializeComponent();
-            DataTable = dataTable;
-            StudentID = DataTable.Rows[0]["ID"].ToString();
+            User = user;
+            StudentID = User.Rows[0]["ID"].ToString();
             FirstLoad();
         }
 
@@ -47,7 +47,7 @@ namespace FinalProject.Student
             TableName = "STUDENT";
             DB = new Database.Database(ServerName, DatabaseName, TableName);
             DB.Open();
-            FIllData(P_DATA,DataTable);
+            FIllData(P_DATA,User);
         }
 
         public void FIllData(Panel parent, DataTable dataTable)
@@ -85,7 +85,7 @@ namespace FinalProject.Student
                     try
                     {
                         pictureBox.BackgroundImage = null;
-                        Meta.LoadImage(pictureBox, "avatar\\student", DataTable.Rows[0]["AVATAR"].ToString());
+                        Meta.LoadImage(pictureBox, "avatar\\student", User.Rows[0]["AVATAR"].ToString());
                     }
                     catch
                     {
@@ -220,9 +220,13 @@ namespace FinalProject.Student
 
         private void AVATAR_Click(object sender, EventArgs e)
         {
-            string savePath = Path.Combine("avatar", "student");
-            AVATAR.Text = Meta.LoadImage(AVATAR, "STD" + MSSV.Text);
-            Source.Meta.SaveImage(AVATAR, savePath);
+            try
+            {
+                string savePath = Path.Combine("avatar", "student");
+                AVATAR.Text = Meta.LoadImage(AVATAR, "STD" + MSSV.Text);
+                Source.Meta.SaveImage(AVATAR, savePath);
+            }
+            catch { }
         }
 
         private void NAME_TextChanged(object sender, EventArgs e)
@@ -329,6 +333,12 @@ namespace FinalProject.Student
             }
 
             return dt;
+        }
+
+        private void B_CHANGEPASSWORD_Click(object sender, EventArgs e)
+        {
+            ChangePassword changePassword = new ChangePassword(MSSV.Text, FIRSTNAME.Text + " " + LASTNAME.Text);
+            changePassword.ShowDialog();
         }
     }
 }

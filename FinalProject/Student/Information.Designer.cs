@@ -276,6 +276,7 @@
             this.B_CHANGEPASSWORD.TabIndex = 10;
             this.B_CHANGEPASSWORD.Text = "Đổi mật khẩu";
             this.B_CHANGEPASSWORD.UseVisualStyleBackColor = true;
+            this.B_CHANGEPASSWORD.Click += new System.EventHandler(this.B_CHANGEPASSWORD_Click);
             // 
             // Information
             // 

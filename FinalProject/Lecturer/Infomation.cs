@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -15,12 +16,12 @@ namespace FinalProject.Lecturer
     public partial class Information : Form
     {
         public Role Role { get; set; } = Role.None;
-        public Database.Database database { get; set; }
-        public DataTable DataTable { get; set; }
+        public Database.Database DB { get; set; }
+        public DataTable InfoDataTable { get; set; }
         public string ServerName { get; set; }
         public string DatabaseName { get; set; }
         public string TableName { get; set; }
-        public string StudentID { get; set; }
+        public string LecturerID { get; set; }
 
         public Information()
         {
@@ -31,8 +32,8 @@ namespace FinalProject.Lecturer
         public Information(DataTable dataTable)
         {
             InitializeComponent();
-            DataTable = dataTable;
-            StudentID = DataTable.Rows[0]["ID"].ToString();
+            InfoDataTable = dataTable;
+            LecturerID = InfoDataTable.Rows[0]["ID"].ToString();
             FirstLoad();
         }
 
@@ -40,9 +41,56 @@ namespace FinalProject.Lecturer
         {
             ServerName = "localhost";
             DatabaseName = "Final";
-            TableName = "STUDENT";
-            database = new Database.Database(ServerName, DatabaseName, TableName);
-            database.Open();
+            TableName = "LECTURER";
+            DB = new Database.Database(ServerName, DatabaseName, TableName);
+            DB.Open();
+            FIllData(P_DATA, InfoDataTable);
+        }
+
+        public void FIllData(Panel parent, DataTable dataTable)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if (control is TextBox)
+                {
+                    try
+                    {
+                        control.Text = dataTable.Rows[0][control.Name].ToString();
+                    }
+                    catch { }
+                }
+                if (control is ComboBox)
+                {
+                    ComboBox comboBox = (ComboBox)control;
+                    if (dataTable.Rows[0]["GENDER"].ToString() == "Nam")
+                    {
+                        comboBox.SelectedIndex = 0;
+                    }
+                    else if (dataTable.Rows[0]["GENDER"].ToString() == "Nữ")
+                    {
+                        comboBox.SelectedIndex = 1;
+                    }
+                }
+                if (control is DateTimePicker)
+                {
+                    DateTimePicker dateTimePicker = (DateTimePicker)control;
+                    dateTimePicker.Text = dataTable.Rows[0][control.Name].ToString();
+                }
+                if (control is PictureBox)
+                {
+                    PictureBox pictureBox = (PictureBox)control;
+                    try
+                    {
+                        pictureBox.BackgroundImage = null;
+                        Meta.LoadImage(pictureBox, "avatar\\lecturer", InfoDataTable.Rows[0]["AVATAR"].ToString());
+                    }
+                    catch
+                    {
+                        Meta.SetNullImage(pictureBox);
+                    }
+                }
+
+            }
         }
 
         public bool CheckDataRefer()
@@ -52,18 +100,6 @@ namespace FinalProject.Lecturer
             {
                 ToolTip toolTip = new ToolTip();
                 toolTip.Show("Email không hợp lệ!", EMAIL);
-                check = false;
-            }
-            if (!Source.Email.IsValidPassword(PASSWORD.Text))
-            {
-                ToolTip toolTip = new ToolTip();
-                toolTip.Show("Mật khẩu phải chứa các ký tự A-Z, a-z, 0-9\nvà một ký tự đặc biệt!", PASSWORD);
-                check = false;
-            }
-            if (PASSWORD.Text != PASSWORDRE.Text)
-            {
-                ToolTip toolTip = new ToolTip();
-                toolTip.Show("Mật khẩu không trùng khớp!", PASSWORDRE);
                 check = false;
             }
             return check;
@@ -126,18 +162,6 @@ namespace FinalProject.Lecturer
                 toolTip.Show("Ảnh chưa được tải lên!", AVATAR);
                 return false;
             }
-            if (PASSWORD.Text.Trim() == "")
-            {
-                ToolTip toolTip = new ToolTip();
-                toolTip.Show("Mật khẩu không được để trống!", PASSWORD);
-                check = false;
-            }
-            if (PASSWORDRE.Text.Trim() == "")
-            {
-                ToolTip toolTip = new ToolTip();
-                toolTip.Show("Chưa nhập lại mật khẩu!", PASSWORDRE);
-                check = false;
-            }
             return check;
         }
 
@@ -152,14 +176,36 @@ namespace FinalProject.Lecturer
                 return;
             }
 
-            database.Connect();
+            StringBuilder query = new StringBuilder();
+            query.AppendFormat("UPDATE {0} ", TableName);
+            //=====================================================
+            query.AppendFormat("SET FACTORY = N'{0}', ", FACTORY.Text);
+            query.AppendFormat("EMAIL = N'{0}', ", EMAIL.Text);
+            query.AppendFormat("FIRSTNAME = N'{0}', ", FIRSTNAME.Text);
+            query.AppendFormat("LASTNAME = N'{0}',", LASTNAME.Text);
+            query.AppendFormat("BIRTHDAY = N'{0}', ", BIRTHDAY.Text);
+            query.AppendFormat("GENDER = N'{0}', ", GENDER.Text);
+            query.AppendFormat("PHONE = N'{0}', ", PHONE.Text);
+            query.AppendFormat("[ADDRESS] = N'{0}',", ADDRESS.Text);
+            query.AppendFormat("AVATAR = N'{0}' ", AVATAR.Text);
+            //=======================================================
+            query.AppendFormat("WHERE ID = N'{0}'", LecturerID);
 
-            DataTable dtSource = new DataTable();
-            GetDataToTable(P_DATA, dtSource);
-
-            //database.InsertRow(dtSource);
-
-            database.Disconnect();
+            using (SqlCommand cmd = new SqlCommand(query.ToString(), DB.Connection))
+            {
+                try
+                {
+                    DB.Connect();
+                    cmd.ExecuteScalar();
+                    MessageBox.Show("Thành công");
+                    DB.Disconnect();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    DB.Disconnect();
+                }
+            }
         }
 
         public void GetDataToTable(Panel parent, DataTable dataTable)
@@ -171,7 +217,7 @@ namespace FinalProject.Lecturer
             }
             foreach (Control control in parent.Controls)
             {
-                if (control is TextBox && control != PASSWORDRE)
+                if (control is TextBox)
                 {
                     dataTable.Columns.Add(control.Name);
                     dataTable.Rows[0][control.Name] = control.Text;
@@ -204,17 +250,21 @@ namespace FinalProject.Lecturer
             this.Close();
         }
 
-        private void B_CANCLE_Click(object sender, EventArgs e)
+        private void B_CHANGPASSWORD_Click(object sender, EventArgs e)
         {
-            Role = Role.None;
-            this.Close();
+            ChangePassword changePassword = new ChangePassword(LecturerID, FIRSTNAME.Text + " " + LASTNAME.Text);
+            changePassword.ShowDialog();
         }
 
         private void AVATAR_Click(object sender, EventArgs e)
         {
-            string savePath = Path.Combine("avatar", "student");
-            AVATAR.Text = Meta.LoadImage(AVATAR, "STD" + FACTORY.Text);
-            Source.Meta.SaveImage(AVATAR, savePath);
+            try
+            {
+                string savePath = Path.Combine("avatar", "lecturer");
+                AVATAR.Text = Meta.LoadImage(AVATAR, "LEC" + FACTORY.Text);
+                Source.Meta.SaveImage(AVATAR, savePath);
+            }
+            catch { }
         }
 
         private void NAME_TextChanged(object sender, EventArgs e)

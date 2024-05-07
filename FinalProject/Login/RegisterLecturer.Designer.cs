@@ -105,7 +105,7 @@
             this.PASSWORDRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PASSWORDRE.Location = new System.Drawing.Point(343, 594);
             this.PASSWORDRE.Name = "PASSWORDRE";
-            this.PASSWORDRE.PasswordChar = '*';
+            this.PASSWORDRE.PasswordChar = '⚫';
             this.PASSWORDRE.Size = new System.Drawing.Size(400, 38);
             this.PASSWORDRE.TabIndex = 9;
             // 
@@ -114,7 +114,7 @@
             this.PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PASSWORD.Location = new System.Drawing.Point(343, 550);
             this.PASSWORD.Name = "PASSWORD";
-            this.PASSWORD.PasswordChar = '*';
+            this.PASSWORD.PasswordChar = '⚫';
             this.PASSWORD.Size = new System.Drawing.Size(400, 38);
             this.PASSWORD.TabIndex = 8;
             // 
@@ -346,7 +346,7 @@
             this.Controls.Add(this.P_DATA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RegisterLecturer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterLecturer";

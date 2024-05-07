@@ -143,7 +143,11 @@ namespace FinalProject.Login
                         Enum.TryParse(user[0], out role);
                         ChangeRole();
                         this.DB.TableName = this.TableName;
-                        TryLogin(user[1], user[2], true);
+                        if (!TryLogin(user[1], user[2], true))
+                        {
+                            RemoveAutoLogin();
+                            return false;
+                        }
                     }
                     return true;
                 }

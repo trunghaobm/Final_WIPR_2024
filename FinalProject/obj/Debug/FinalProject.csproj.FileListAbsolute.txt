@@ -31,3 +31,4 @@ F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Admin.Change
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Student.ChangePassword.resources
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Admin.CourseRegistration.resources
 F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Admin.CourseRegistrationStudenLlist.resources
+F:\20232024_2\T4_0710_LTW\Final\FinalProject\obj\Debug\FinalProject.Lecturer.ChangePassword.resources

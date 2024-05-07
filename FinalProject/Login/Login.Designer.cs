@@ -70,7 +70,7 @@
             this.PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PASSWORD.Location = new System.Drawing.Point(163, 169);
             this.PASSWORD.Name = "PASSWORD";
-            this.PASSWORD.PasswordChar = '*';
+            this.PASSWORD.PasswordChar = '⚫';
             this.PASSWORD.Size = new System.Drawing.Size(267, 38);
             this.PASSWORD.TabIndex = 1;
             this.PASSWORD.Text = "Admin@123";

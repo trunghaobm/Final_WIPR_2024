@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.P_LEFTMENU = new System.Windows.Forms.Panel();
             this.B_ADMIN_COURSEREGISTION = new System.Windows.Forms.Button();
             this.B_STUDENT_ASSIGNMENT = new System.Windows.Forms.Button();
@@ -45,6 +46,8 @@
             this.B_LOGOUT = new System.Windows.Forms.Button();
             this.B_CLOSE = new System.Windows.Forms.Button();
             this.P_MAIN_PARENT = new System.Windows.Forms.Panel();
+            this.B_LECTURER_INFOMATION = new System.Windows.Forms.Button();
+            this.TIMER_RELOAD = new System.Windows.Forms.Timer(this.components);
             this.P_LEFTMENU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PIC_LOGO)).BeginInit();
             this.P_TOPMENU.SuspendLayout();
@@ -58,6 +61,7 @@
             this.P_LEFTMENU.Controls.Add(this.B_STUDENT_ASSIGNMENT);
             this.P_LEFTMENU.Controls.Add(this.B_LECTURER_ASSIGNMENT);
             this.P_LEFTMENU.Controls.Add(this.B_LECTURER_SCORE);
+            this.P_LEFTMENU.Controls.Add(this.B_LECTURER_INFOMATION);
             this.P_LEFTMENU.Controls.Add(this.B_STUDENT_COURSE);
             this.P_LEFTMENU.Controls.Add(this.B_STUDENT_SCORE);
             this.P_LEFTMENU.Controls.Add(this.B_ADMIN_LECTURE);
@@ -79,9 +83,9 @@
             this.B_ADMIN_COURSEREGISTION.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_ADMIN_COURSEREGISTION.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B_ADMIN_COURSEREGISTION.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_ADMIN_COURSEREGISTION.Location = new System.Drawing.Point(0, 600);
+            this.B_ADMIN_COURSEREGISTION.Location = new System.Drawing.Point(0, 650);
             this.B_ADMIN_COURSEREGISTION.Name = "B_ADMIN_COURSEREGISTION";
-            this.B_ADMIN_COURSEREGISTION.Size = new System.Drawing.Size(150, 50);
+            this.B_ADMIN_COURSEREGISTION.Size = new System.Drawing.Size(133, 50);
             this.B_ADMIN_COURSEREGISTION.TabIndex = 12;
             this.B_ADMIN_COURSEREGISTION.TabStop = false;
             this.B_ADMIN_COURSEREGISTION.Text = "Đăng ký khóa học";
@@ -95,9 +99,9 @@
             this.B_STUDENT_ASSIGNMENT.Dock = System.Windows.Forms.DockStyle.Top;
             this.B_STUDENT_ASSIGNMENT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_STUDENT_ASSIGNMENT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_STUDENT_ASSIGNMENT.Location = new System.Drawing.Point(0, 550);
+            this.B_STUDENT_ASSIGNMENT.Location = new System.Drawing.Point(0, 600);
             this.B_STUDENT_ASSIGNMENT.Name = "B_STUDENT_ASSIGNMENT";
-            this.B_STUDENT_ASSIGNMENT.Size = new System.Drawing.Size(150, 50);
+            this.B_STUDENT_ASSIGNMENT.Size = new System.Drawing.Size(133, 50);
             this.B_STUDENT_ASSIGNMENT.TabIndex = 11;
             this.B_STUDENT_ASSIGNMENT.TabStop = false;
             this.B_STUDENT_ASSIGNMENT.Text = "Bài tập";
@@ -111,9 +115,9 @@
             this.B_LECTURER_ASSIGNMENT.Dock = System.Windows.Forms.DockStyle.Top;
             this.B_LECTURER_ASSIGNMENT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_LECTURER_ASSIGNMENT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_LECTURER_ASSIGNMENT.Location = new System.Drawing.Point(0, 500);
+            this.B_LECTURER_ASSIGNMENT.Location = new System.Drawing.Point(0, 550);
             this.B_LECTURER_ASSIGNMENT.Name = "B_LECTURER_ASSIGNMENT";
-            this.B_LECTURER_ASSIGNMENT.Size = new System.Drawing.Size(150, 50);
+            this.B_LECTURER_ASSIGNMENT.Size = new System.Drawing.Size(133, 50);
             this.B_LECTURER_ASSIGNMENT.TabIndex = 10;
             this.B_LECTURER_ASSIGNMENT.TabStop = false;
             this.B_LECTURER_ASSIGNMENT.Text = "Bài tập";
@@ -127,9 +131,9 @@
             this.B_LECTURER_SCORE.Dock = System.Windows.Forms.DockStyle.Top;
             this.B_LECTURER_SCORE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_LECTURER_SCORE.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_LECTURER_SCORE.Location = new System.Drawing.Point(0, 450);
+            this.B_LECTURER_SCORE.Location = new System.Drawing.Point(0, 500);
             this.B_LECTURER_SCORE.Name = "B_LECTURER_SCORE";
-            this.B_LECTURER_SCORE.Size = new System.Drawing.Size(150, 50);
+            this.B_LECTURER_SCORE.Size = new System.Drawing.Size(133, 50);
             this.B_LECTURER_SCORE.TabIndex = 9;
             this.B_LECTURER_SCORE.TabStop = false;
             this.B_LECTURER_SCORE.Text = "Điểm";
@@ -145,7 +149,7 @@
             this.B_STUDENT_COURSE.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_STUDENT_COURSE.Location = new System.Drawing.Point(0, 400);
             this.B_STUDENT_COURSE.Name = "B_STUDENT_COURSE";
-            this.B_STUDENT_COURSE.Size = new System.Drawing.Size(150, 50);
+            this.B_STUDENT_COURSE.Size = new System.Drawing.Size(133, 50);
             this.B_STUDENT_COURSE.TabIndex = 8;
             this.B_STUDENT_COURSE.TabStop = false;
             this.B_STUDENT_COURSE.Text = "Khóa học";
@@ -161,7 +165,7 @@
             this.B_STUDENT_SCORE.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_STUDENT_SCORE.Location = new System.Drawing.Point(0, 350);
             this.B_STUDENT_SCORE.Name = "B_STUDENT_SCORE";
-            this.B_STUDENT_SCORE.Size = new System.Drawing.Size(150, 50);
+            this.B_STUDENT_SCORE.Size = new System.Drawing.Size(133, 50);
             this.B_STUDENT_SCORE.TabIndex = 7;
             this.B_STUDENT_SCORE.TabStop = false;
             this.B_STUDENT_SCORE.Text = "Xem điểm";
@@ -176,7 +180,7 @@
             this.B_ADMIN_LECTURE.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_ADMIN_LECTURE.Location = new System.Drawing.Point(0, 300);
             this.B_ADMIN_LECTURE.Name = "B_ADMIN_LECTURE";
-            this.B_ADMIN_LECTURE.Size = new System.Drawing.Size(150, 50);
+            this.B_ADMIN_LECTURE.Size = new System.Drawing.Size(133, 50);
             this.B_ADMIN_LECTURE.TabIndex = 6;
             this.B_ADMIN_LECTURE.TabStop = false;
             this.B_ADMIN_LECTURE.Text = "Giảng viên";
@@ -192,7 +196,7 @@
             this.B_ADMIN_STUDENT.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_ADMIN_STUDENT.Location = new System.Drawing.Point(0, 250);
             this.B_ADMIN_STUDENT.Name = "B_ADMIN_STUDENT";
-            this.B_ADMIN_STUDENT.Size = new System.Drawing.Size(150, 50);
+            this.B_ADMIN_STUDENT.Size = new System.Drawing.Size(133, 50);
             this.B_ADMIN_STUDENT.TabIndex = 5;
             this.B_ADMIN_STUDENT.TabStop = false;
             this.B_ADMIN_STUDENT.Text = "Sinh viên";
@@ -208,7 +212,7 @@
             this.B_STUDENT_ACCOUNT.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_STUDENT_ACCOUNT.Location = new System.Drawing.Point(0, 200);
             this.B_STUDENT_ACCOUNT.Name = "B_STUDENT_ACCOUNT";
-            this.B_STUDENT_ACCOUNT.Size = new System.Drawing.Size(150, 50);
+            this.B_STUDENT_ACCOUNT.Size = new System.Drawing.Size(133, 50);
             this.B_STUDENT_ACCOUNT.TabIndex = 4;
             this.B_STUDENT_ACCOUNT.TabStop = false;
             this.B_STUDENT_ACCOUNT.Text = "Tài khoản";
@@ -224,7 +228,7 @@
             this.B_ADMIN_COURSE.ForeColor = System.Drawing.SystemColors.ControlText;
             this.B_ADMIN_COURSE.Location = new System.Drawing.Point(0, 150);
             this.B_ADMIN_COURSE.Name = "B_ADMIN_COURSE";
-            this.B_ADMIN_COURSE.Size = new System.Drawing.Size(150, 50);
+            this.B_ADMIN_COURSE.Size = new System.Drawing.Size(133, 50);
             this.B_ADMIN_COURSE.TabIndex = 3;
             this.B_ADMIN_COURSE.TabStop = false;
             this.B_ADMIN_COURSE.Text = "Khóa học";
@@ -237,7 +241,7 @@
             this.PIC_LOGO.Dock = System.Windows.Forms.DockStyle.Top;
             this.PIC_LOGO.Location = new System.Drawing.Point(0, 0);
             this.PIC_LOGO.Name = "PIC_LOGO";
-            this.PIC_LOGO.Size = new System.Drawing.Size(150, 150);
+            this.PIC_LOGO.Size = new System.Drawing.Size(133, 150);
             this.PIC_LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PIC_LOGO.TabIndex = 0;
             this.PIC_LOGO.TabStop = false;
@@ -299,6 +303,27 @@
             this.P_MAIN_PARENT.Size = new System.Drawing.Size(1046, 634);
             this.P_MAIN_PARENT.TabIndex = 2;
             // 
+            // B_LECTURER_INFOMATION
+            // 
+            this.B_LECTURER_INFOMATION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.B_LECTURER_INFOMATION.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_LECTURER_INFOMATION.Dock = System.Windows.Forms.DockStyle.Top;
+            this.B_LECTURER_INFOMATION.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B_LECTURER_INFOMATION.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.B_LECTURER_INFOMATION.Location = new System.Drawing.Point(0, 450);
+            this.B_LECTURER_INFOMATION.Name = "B_LECTURER_INFOMATION";
+            this.B_LECTURER_INFOMATION.Size = new System.Drawing.Size(133, 50);
+            this.B_LECTURER_INFOMATION.TabIndex = 13;
+            this.B_LECTURER_INFOMATION.TabStop = false;
+            this.B_LECTURER_INFOMATION.Text = "Tài khoản";
+            this.B_LECTURER_INFOMATION.UseVisualStyleBackColor = false;
+            this.B_LECTURER_INFOMATION.Click += new System.EventHandler(this.B_LECTURER_INFOMATION_Click);
+            // 
+            // TIMER_RELOAD
+            // 
+            this.TIMER_RELOAD.Enabled = true;
+            this.TIMER_RELOAD.Tick += new System.EventHandler(this.TIMER_RELOAD_Tick);
+            // 
             // F_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -343,6 +368,8 @@
         private System.Windows.Forms.Button B_LECTURER_ASSIGNMENT;
         private System.Windows.Forms.Button B_STUDENT_ASSIGNMENT;
         private System.Windows.Forms.Button B_ADMIN_COURSEREGISTION;
+        private System.Windows.Forms.Button B_LECTURER_INFOMATION;
+        private System.Windows.Forms.Timer TIMER_RELOAD;
     }
 }
 

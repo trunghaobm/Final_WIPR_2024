@@ -11,20 +11,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject.Student
+namespace FinalProject.Lecturer
 {
     public partial class ChangePassword : Form
     {
         public string ServerName { get; set; } = "localhost";
         public string DatabaseName { get; set; } = "Final";
-        public string TableName { get; set; } = "Student";
+        public string TableName { get; set; }
         public string UserID { get; set; }
         public string UserName { get; set; }
         public Database.Database DB { get; set; }
         public ChangePassword( string userID, string userName)
         {
             InitializeComponent();
-            TableName = "STUDENT";
+            TableName = "LECTURER";
             UserID = userID;
             UserName = userName;
             L_ID.Text = userID + " " + userName;
@@ -81,12 +81,12 @@ namespace FinalProject.Student
             return pass;
         }
         
-        public bool CheckMatchPassword(string password, string mssv)
+        public bool CheckMatchPassword(string password, string lectureID)
         {
             StringBuilder query = new StringBuilder();
             query.AppendFormat("SELECT PASSWORD FROM {0} WHERE " +
-                                                    "MSSV = N'{1}' AND " +
-                                                    "PASSWORD = CONVERT(NVARCHAR(MAX), HASHBYTES('SHA2_512',N'{2}'), 2) ", TableName, mssv, password);
+                                                    "ID = N'{1}' AND " +
+                                                    "PASSWORD = CONVERT(NVARCHAR(MAX), HASHBYTES('SHA2_512',N'{2}'), 2) ", TableName, lectureID, password);
             DataTable result = new DataTable();
             using(SqlDataAdapter adapter = new SqlDataAdapter(query.ToString(), DB.Connection))
             {
@@ -116,7 +116,7 @@ namespace FinalProject.Student
             StringBuilder query = new StringBuilder();
             query.AppendFormat("UPDATE {0} ", TableName);
             query.AppendFormat("SET PASSWORD = CONVERT(NVARCHAR(MAX), HASHBYTES('SHA2_512',N'{0}'), 2) ", NEWPASSWORD.Text);
-            query.AppendFormat("WHERE MSSV = N'{0}'", UserID);
+            query.AppendFormat("WHERE ID = N'{0}'", UserID);
 
             using (SqlCommand cmd = new SqlCommand(query.ToString(), DB.Connection))
             {
