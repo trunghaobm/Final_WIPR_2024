@@ -1,3 +1,4 @@
-FinalProject/bin
-!FinalProject/bin/Debug/images
-.vs
+FinalProject/bin/*
+!FinalProject/bin/Debug/
+FinalProject/bin/Debug/*
+!FinalProject/bin/Debug/images/
