@@ -29,7 +29,7 @@ namespace FinalProject
         public Lecturer.AssignmentManager assignmentManager;
         public Student.Assignment studentAssignment;
         public Student.Information studentInformation;
-        public Admin.CourseRegistration courseRegistration;
+        public Admin.CourseRegistrationStudenLlist courseRegistrationStudenLlist;
         public string studentID;
 
         public F_Main()
@@ -190,6 +190,7 @@ namespace FinalProject
 
         private void B_ADMIN_COURSE_Click(object sender, EventArgs e)
         {
+            Course = new Course.Main();
             Course.Size = P_MAIN_PARENT.Size;
             Source.Meta.OpenChileForm(P_MAIN_PARENT, this.Course); 
         }
@@ -238,9 +239,9 @@ namespace FinalProject
 
         private void B_ADMIN_COURSEREGISTION_Click(object sender, EventArgs e)
         {
-            courseRegistration = new Admin.CourseRegistration();
-            courseRegistration.Size = P_MAIN_PARENT.Size;
-            Meta.OpenChileForm(P_MAIN_PARENT, courseRegistration);
+            courseRegistrationStudenLlist = new Admin.CourseRegistrationStudenLlist();
+            courseRegistrationStudenLlist.Size = P_MAIN_PARENT.Size;
+            Meta.OpenChileForm(P_MAIN_PARENT, courseRegistrationStudenLlist);
         }
     }
 }

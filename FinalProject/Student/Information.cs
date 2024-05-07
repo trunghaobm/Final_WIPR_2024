@@ -77,7 +77,7 @@ namespace FinalProject.Student
                 if(control is DateTimePicker)
                 {
                     DateTimePicker dateTimePicker = (DateTimePicker)control;
-                    dateTimePicker.Text = DataTable.Rows[0][control.Name].ToString();
+                    dateTimePicker.Text = dataTable.Rows[0][control.Name].ToString();
                 }
                 if(control is PictureBox)
                 {

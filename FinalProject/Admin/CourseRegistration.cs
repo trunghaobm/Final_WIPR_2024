@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Source;
+using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +19,13 @@ namespace FinalProject.Admin
         public string DatabaseName { get; set; } = "Final";
         public string TableName { get; set; } = "STUDENT_COURSE";
         public Database.Database DB { get; set; }
-        public DataTable TableStdCrs { get; set; }
-        public DataTable TableStudents { get; set; }
-        public DataTable TableCourse { get; set; }
+        public System.Data.DataTable TableStdCrs { get; set; }
+        public System.Data.DataTable TableStudents { get; set; }
+        public System.Data.DataTable TableCourse { get; set; }
         public int AvailablePosition { get; set; } = -1;
         public int SelectedlePosition { get; set; } = -1;
+
+        public string StudentID { get; set; }
 
         private BindingList<CourseData> AvailableCourse;
         private BindingList<CourseData> SelectedCourse;
@@ -44,12 +48,27 @@ namespace FinalProject.Admin
             DB.Open();
             FirstLoad();
         }
+        public CourseRegistration(string studentID)
+        {
+            InitializeComponent();
+            StudentID = studentID;
+            STUDENTID.Text = studentID;
+            DB = new Database.Database(ServerName, DatabaseName, TableName);
+            DB.Open();
+            FirstLoad();
+            if(lsbAvailableCourse.Items.Count <= 0)
+            {
+                btnAdd.Enabled = false;
+            }
+            btnSave.Enabled = false;
+            B_REMOVE.Enabled = false;
+        }
 
         public void FirstLoad()
         {
             AvailableCourse = new BindingList<CourseData>();
             SelectedCourse = new BindingList<CourseData>();
-            TableCourse = new DataTable();
+            TableCourse = new System.Data.DataTable();
 
 
             TableCourse = GeLlistCourse();
@@ -78,9 +97,9 @@ namespace FinalProject.Admin
         }
 
         //tra ve mot bang course
-        public DataTable GeLlistCourse()
+        public System.Data.DataTable GeLlistCourse()
         {
-            DataTable dt = new DataTable();
+            System.Data.DataTable dt = new System.Data.DataTable();
             StringBuilder query = new StringBuilder();
             query.Append("SELECT * FROM COURSE");
 
@@ -111,6 +130,12 @@ namespace FinalProject.Admin
                     if(SelectedlePosition == -1)
                     {
                         SelectedlePosition = 0;
+                    }
+                    btnSave.Enabled = true;
+                    B_REMOVE.Enabled = true;
+                    if(lsbAvailableCourse.Items.Count <=0 )
+                    {
+                        btnAdd.Enabled = false;
                     }
                     //lsbAvailableCourse.Items.Remove(selectedCourse);
                     // Xóa phần tử đã chọn khỏi ListBox nguồn
@@ -154,6 +179,12 @@ namespace FinalProject.Admin
                     {
                         AvailablePosition = 0;
                     }
+                    btnAdd.Enabled = true;
+                    if(lsbSelectedCourse.Items.Count <= 0)
+                    {
+                        btnSave.Enabled = false;
+                        B_REMOVE.Enabled = false;
+                    }
                     //lsbAvailableCourse.Items.Remove(selectedCourse);
                     // Xóa phần tử đã chọn khỏi ListBox nguồn
                 }
@@ -168,7 +199,34 @@ namespace FinalProject.Admin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            SaveCourseRegistration(SelectedCourse);
+        }
 
+        private void SaveCourseRegistration(BindingList<CourseData> selectedCourse)
+        {
+            System.Data.DataTable temp = new System.Data.DataTable();
+
+            temp.Columns.Add("STUDENTID");
+            temp.Columns.Add("COURSEID");
+            temp.Columns.Add("SCORE");
+
+            foreach (var item in selectedCourse)
+            {
+                DataRow dr = temp.NewRow();
+                dr["STUDENTID"] = StudentID;
+                dr["COURSEID"] = ((CourseData)item).ID;
+                dr["SCORE"] = 0.ToString();
+
+                temp.Rows.Clear();
+                temp.Rows.Add(dr);
+
+                DB.TableName = "STUDENT_COURSE";
+                if (DB.InsertRow(temp))
+                {
+                    MessageBox.Show("Đã thêm thành công");
+                    this.Close();
+                }
+            }
         }
     }
 }

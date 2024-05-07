@@ -45,6 +45,7 @@ RETURN
 (
     SELECT	C.ID AS ID
 			,C.[LABEL] AS [TÊN KHÓA HỌC]
+			,C.SEMESTER AS [HỌC KỲ]
 			,C.[DESCRIPTION] AS [MÔ TẢ]
 			,C.[PERIOD] AS [THỜI GIAN HỌC]
     FROM COURSE C 

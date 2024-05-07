@@ -33,7 +33,7 @@
             this.lsbAvailableCourse = new System.Windows.Forms.ListBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.cbbSemester = new System.Windows.Forms.ComboBox();
-            this.txbStudentID = new System.Windows.Forms.TextBox();
+            this.STUDENTID = new System.Windows.Forms.TextBox();
             this.B_REMOVE = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblSelectedCourse = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.lsbAvailableCourse);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.cbbSemester);
-            this.panel1.Controls.Add(this.txbStudentID);
+            this.panel1.Controls.Add(this.STUDENTID);
             this.panel1.Controls.Add(this.B_REMOVE);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.lblSelectedCourse);
@@ -113,13 +113,14 @@
             this.cbbSemester.Size = new System.Drawing.Size(105, 32);
             this.cbbSemester.TabIndex = 12;
             // 
-            // txbStudentID
+            // STUDENTID
             // 
-            this.txbStudentID.Location = new System.Drawing.Point(139, 64);
-            this.txbStudentID.Margin = new System.Windows.Forms.Padding(2);
-            this.txbStudentID.Name = "txbStudentID";
-            this.txbStudentID.Size = new System.Drawing.Size(174, 29);
-            this.txbStudentID.TabIndex = 11;
+            this.STUDENTID.Enabled = false;
+            this.STUDENTID.Location = new System.Drawing.Point(139, 64);
+            this.STUDENTID.Margin = new System.Windows.Forms.Padding(2);
+            this.STUDENTID.Name = "STUDENTID";
+            this.STUDENTID.Size = new System.Drawing.Size(174, 29);
+            this.STUDENTID.TabIndex = 11;
             // 
             // B_REMOVE
             // 
@@ -204,9 +205,9 @@
             this.ClientSize = new System.Drawing.Size(654, 439);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CourseRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CourseRegistration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -221,7 +222,7 @@
         private System.Windows.Forms.ListBox lsbAvailableCourse;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cbbSemester;
-        private System.Windows.Forms.TextBox txbStudentID;
+        private System.Windows.Forms.TextBox STUDENTID;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblSelectedCourse;
         private System.Windows.Forms.Label lblAvailableCourse;

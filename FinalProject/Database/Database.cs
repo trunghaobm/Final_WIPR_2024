@@ -163,7 +163,10 @@ namespace FinalProject.Database
                 }
                 catch(SqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    string msg = ex.Message;
+                    msg += "\nStudent ID: " + source.Rows[0]["STUDENTID"].ToString();
+                    msg += "\nCoursr ID: " + source.Rows[0]["COURSEID"].ToString();
+                    MessageBox.Show(msg);
                 }
             }
 
@@ -189,7 +192,10 @@ namespace FinalProject.Database
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    string msg = ex.Message;
+                    msg += "\nStudent ID: " + source.Rows[0]["STUDENTID"].ToString();
+                    msg += "\nCoursr ID: " + source.Rows[0]["COURSEID"].ToString();
+                    MessageBox.Show(msg);
                 }
             }
 

@@ -62,6 +62,12 @@
     <Compile Include="Admin\CourseRegistration.Designer.cs">
       <DependentUpon>CourseRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\CourseRegistrationStudenLlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseRegistrationStudenLlist.Designer.cs">
+      <DependentUpon>CourseRegistrationStudenLlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\LecturerManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\CourseRegistration.resx">
       <DependentUpon>CourseRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CourseRegistrationStudenLlist.resx">
+      <DependentUpon>CourseRegistrationStudenLlist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\LecturerManager.resx">
       <DependentUpon>LecturerManager.cs</DependentUpon>
