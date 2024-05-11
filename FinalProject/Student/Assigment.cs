@@ -66,7 +66,7 @@ namespace FinalProject.Student
             query.Append("LEFT JOIN STUDENT S ON A.STUDENTID = S.ID ");
             query.Append("LEFT JOIN COURSE C ON A.COURESID = C.ID ");
             //==============================================================
-            query.AppendFormat("WHERE A.STUDENTID = N'{0}' ", condition);
+            query.AppendFormat("WHERE A.STUDENTID = N'{0}'", condition);
             DataTable dataTable = new DataTable();
             using (SqlDataAdapter adapter = new SqlDataAdapter(query.ToString(), DB.Connection))
             {

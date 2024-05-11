@@ -34,7 +34,6 @@
             this.SEARCH = new System.Windows.Forms.TextBox();
             this.P_DATA = new System.Windows.Forms.Panel();
             this.P_CONTROL = new System.Windows.Forms.Panel();
-            this.B_UPDATE = new System.Windows.Forms.Button();
             this.B_REMOVE = new System.Windows.Forms.Button();
             this.B_ADD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_DATA)).BeginInit();
@@ -98,7 +97,6 @@
             // 
             // P_CONTROL
             // 
-            this.P_CONTROL.Controls.Add(this.B_UPDATE);
             this.P_CONTROL.Controls.Add(this.B_REMOVE);
             this.P_CONTROL.Controls.Add(this.B_ADD);
             this.P_CONTROL.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -107,16 +105,6 @@
             this.P_CONTROL.Name = "P_CONTROL";
             this.P_CONTROL.Size = new System.Drawing.Size(829, 66);
             this.P_CONTROL.TabIndex = 8;
-            // 
-            // B_UPDATE
-            // 
-            this.B_UPDATE.Location = new System.Drawing.Point(151, 9);
-            this.B_UPDATE.Name = "B_UPDATE";
-            this.B_UPDATE.Size = new System.Drawing.Size(133, 39);
-            this.B_UPDATE.TabIndex = 0;
-            this.B_UPDATE.TabStop = false;
-            this.B_UPDATE.Text = "Sửa";
-            this.B_UPDATE.UseVisualStyleBackColor = true;
             // 
             // B_REMOVE
             // 
@@ -128,6 +116,7 @@
             this.B_REMOVE.TabStop = false;
             this.B_REMOVE.Text = "Xóa";
             this.B_REMOVE.UseVisualStyleBackColor = true;
+            this.B_REMOVE.Click += new System.EventHandler(this.B_REMOVE_Click);
             // 
             // B_ADD
             // 
@@ -170,7 +159,6 @@
         private System.Windows.Forms.TextBox SEARCH;
         private System.Windows.Forms.Panel P_DATA;
         private System.Windows.Forms.Panel P_CONTROL;
-        private System.Windows.Forms.Button B_UPDATE;
         private System.Windows.Forms.Button B_REMOVE;
         private System.Windows.Forms.Button B_ADD;
     }

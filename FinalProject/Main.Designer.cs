@@ -34,6 +34,7 @@
             this.B_STUDENT_ASSIGNMENT = new System.Windows.Forms.Button();
             this.B_LECTURER_ASSIGNMENT = new System.Windows.Forms.Button();
             this.B_LECTURER_SCORE = new System.Windows.Forms.Button();
+            this.B_LECTURER_INFOMATION = new System.Windows.Forms.Button();
             this.B_STUDENT_COURSE = new System.Windows.Forms.Button();
             this.B_STUDENT_SCORE = new System.Windows.Forms.Button();
             this.B_ADMIN_LECTURE = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.B_LOGOUT = new System.Windows.Forms.Button();
             this.B_CLOSE = new System.Windows.Forms.Button();
             this.P_MAIN_PARENT = new System.Windows.Forms.Panel();
-            this.B_LECTURER_INFOMATION = new System.Windows.Forms.Button();
             this.TIMER_RELOAD = new System.Windows.Forms.Timer(this.components);
             this.P_LEFTMENU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PIC_LOGO)).BeginInit();
@@ -139,6 +139,22 @@
             this.B_LECTURER_SCORE.Text = "Điểm";
             this.B_LECTURER_SCORE.UseVisualStyleBackColor = false;
             this.B_LECTURER_SCORE.Click += new System.EventHandler(this.B_LECTURER_SCORE_Click);
+            // 
+            // B_LECTURER_INFOMATION
+            // 
+            this.B_LECTURER_INFOMATION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.B_LECTURER_INFOMATION.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B_LECTURER_INFOMATION.Dock = System.Windows.Forms.DockStyle.Top;
+            this.B_LECTURER_INFOMATION.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B_LECTURER_INFOMATION.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.B_LECTURER_INFOMATION.Location = new System.Drawing.Point(0, 450);
+            this.B_LECTURER_INFOMATION.Name = "B_LECTURER_INFOMATION";
+            this.B_LECTURER_INFOMATION.Size = new System.Drawing.Size(133, 50);
+            this.B_LECTURER_INFOMATION.TabIndex = 13;
+            this.B_LECTURER_INFOMATION.TabStop = false;
+            this.B_LECTURER_INFOMATION.Text = "Tài khoản";
+            this.B_LECTURER_INFOMATION.UseVisualStyleBackColor = false;
+            this.B_LECTURER_INFOMATION.Click += new System.EventHandler(this.B_LECTURER_INFOMATION_Click);
             // 
             // B_STUDENT_COURSE
             // 
@@ -245,6 +261,7 @@
             this.PIC_LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PIC_LOGO.TabIndex = 0;
             this.PIC_LOGO.TabStop = false;
+            this.PIC_LOGO.Click += new System.EventHandler(this.PIC_LOGO_Click);
             // 
             // P_TOPMENU
             // 
@@ -302,22 +319,6 @@
             this.P_MAIN_PARENT.Name = "P_MAIN_PARENT";
             this.P_MAIN_PARENT.Size = new System.Drawing.Size(1046, 634);
             this.P_MAIN_PARENT.TabIndex = 2;
-            // 
-            // B_LECTURER_INFOMATION
-            // 
-            this.B_LECTURER_INFOMATION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.B_LECTURER_INFOMATION.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B_LECTURER_INFOMATION.Dock = System.Windows.Forms.DockStyle.Top;
-            this.B_LECTURER_INFOMATION.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.B_LECTURER_INFOMATION.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.B_LECTURER_INFOMATION.Location = new System.Drawing.Point(0, 450);
-            this.B_LECTURER_INFOMATION.Name = "B_LECTURER_INFOMATION";
-            this.B_LECTURER_INFOMATION.Size = new System.Drawing.Size(133, 50);
-            this.B_LECTURER_INFOMATION.TabIndex = 13;
-            this.B_LECTURER_INFOMATION.TabStop = false;
-            this.B_LECTURER_INFOMATION.Text = "Tài khoản";
-            this.B_LECTURER_INFOMATION.UseVisualStyleBackColor = false;
-            this.B_LECTURER_INFOMATION.Click += new System.EventHandler(this.B_LECTURER_INFOMATION_Click);
             // 
             // TIMER_RELOAD
             // 

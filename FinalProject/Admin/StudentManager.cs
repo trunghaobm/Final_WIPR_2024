@@ -201,6 +201,7 @@ namespace FinalProject.Admin
                     // Hiển thị DataTable trong DataGridView
                     DGV_LIST.DataSource = dataTable;
                 }
+                connection.Close();
             }
         }
 

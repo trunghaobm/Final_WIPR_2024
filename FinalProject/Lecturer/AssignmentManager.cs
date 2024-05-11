@@ -84,17 +84,20 @@ namespace FinalProject.Lecturer
             coursemanager = new Course.Main("assignment");
             coursemanager.FormBorderStyle = FormBorderStyle.Sizable;
             coursemanager.Text = "Chọn môn học";
-            coursemanager.ShowDialog();
+            DialogResult dialogResult = coursemanager.ShowDialog();
             try
             {
-                string courseID = coursemanager.ID;
-                if (courseID != "")
+                if (dialogResult != DialogResult.Cancel)
                 {
-                    int rowIndex = DGV_DATA.SelectedCells[0].RowIndex;
-                    string lecturerID = DGV_DATA.Rows[rowIndex].Cells["MÃ GIẢNG VIÊN"].Value.ToString();
-                    AddAssignment addAssignment = new AddAssignment(lecturerID, courseID);
-                    addAssignment.ShowDialog();
-                    FirstLoad();
+                    string courseID = coursemanager.ID;
+                    if (courseID != "")
+                    {
+                        int rowIndex = DGV_DATA.SelectedCells[0].RowIndex;
+                        string lecturerID = DGV_DATA.Rows[rowIndex].Cells["MÃ GIẢNG VIÊN"].Value.ToString();
+                        AddAssignment addAssignment = new AddAssignment(lecturerID, courseID);
+                        addAssignment.ShowDialog();
+                        FirstLoad();
+                    }
                 }
             }
             catch { }
@@ -103,6 +106,31 @@ namespace FinalProject.Lecturer
         private void B_SEARCH_Click(object sender, EventArgs e)
         {
             DGV_DATA.DataSource = Search(SEARCH.Text.Trim());
+        }
+
+        private void B_UPDATE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void B_REMOVE_Click(object sender, EventArgs e)
+        {
+            int rowIndex = DGV_DATA.SelectedCells[0].RowIndex;
+            string assignmentID = DGV_DATA.Rows[rowIndex].Cells[0].Value.ToString();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Rows.Add(dt.NewRow());
+            dt.Rows[0]["ID"] = assignmentID;
+
+            DB.Connect();
+
+            if (DB.DeletetRow(dt))
+            {
+                MessageBox.Show("Đã xóa");
+            }
+
+            DB.Disconnect();
+            Reload();
         }
     }
 }

@@ -83,12 +83,14 @@ namespace FinalProject
                 case Source.Role.None: break;
                 case Source.Role.Admin:
                     L_NAME.Text = Role.ToString();
+                    Meta.SetNullImage(PIC_LOGO);
                     break;
                 case Source.Role.Student:
                     studentID = User.Rows[0]["ID"].ToString();
                     imgPath = Path.Combine(appPath, "avatar", "student", user.Rows[0]["AVATAR"].ToString());
                     try
                     {
+                        PIC_LOGO.BackgroundImage = null;
                         PIC_LOGO.Image = Image.FromFile(imgPath);
                     }
                     catch
@@ -100,6 +102,7 @@ namespace FinalProject
                 case Source.Role.Lecturer:
                     try
                     {
+                        PIC_LOGO.BackgroundImage = null;
                         imgPath = Path.Combine(appPath, "avatar", "lecturer", user.Rows[0]["AVATAR"].ToString());
                         PIC_LOGO.Image = Image.FromFile(imgPath);
                     }
@@ -273,12 +276,7 @@ namespace FinalProject
 
         public void ReloadUser()
         {
-            Database.Database DB = new Database.Database();
-            DB.ServerName = "localhost";
-            DB.DatabaseName = "Final";
-            DB.Open();
-
-
+            Database.Database DB = new Database.Database("localhost", "Final", "STUDENT");
             switch(Role)
             {
                 case Role.Admin: break;
@@ -292,13 +290,24 @@ namespace FinalProject
                 default: break;
             }
 
-            if(!string.IsNullOrWhiteSpace(DB.TableName) && !string.IsNullOrEmpty(DB.TableName))
+
+            DB.Open();
+
+            if (!string.IsNullOrWhiteSpace(DB.TableName) && !string.IsNullOrEmpty(DB.TableName))
             {
+                DB.Connect();
                 User = DB.GetTable(User.Rows[0]["EMAIL"].ToString());
+                DB.Disconnect();
             }
             LoadUser(User);
         }
         private void TIMER_RELOAD_Tick(object sender, EventArgs e)
+        {
+            //ReloadUser();
+            TIMER_RELOAD.Stop();
+        }
+
+        private void PIC_LOGO_Click(object sender, EventArgs e)
         {
             ReloadUser();
         }

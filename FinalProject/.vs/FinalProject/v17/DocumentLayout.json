@@ -3,28 +3,68 @@
   "WorkspaceRootPath": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\student\\assigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\assigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\student\\assigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\assigment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\student\\courseregistion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\courseregistion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\student\\courseregistion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\courseregistion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\student\\coursemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\coursemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\student\\coursemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:student\\coursemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\assignmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistrationstudenllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\courseregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\lecturermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\lecturermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\lecturermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\lecturermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:admin\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|f:\\20232024_2\\t4_0710_ltw\\final\\finalproject\\source\\meta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:source\\meta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D41B0C-EBC5-4B87-8018-2BCB91D6AEAA}|FinalProject.csproj|solutionrelative:lecturer\\addassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +74,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LecturerManager.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\LecturerManager.cs",
-              "RelativeDocumentMoniker": "Admin\\LecturerManager.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\LecturerManager.cs",
-              "RelativeToolTip": "Admin\\LecturerManager.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAwwCQAAAArAAAA",
+              "DocumentIndex": 2,
+              "Title": "CourseRegistion.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseRegistion.cs",
+              "RelativeDocumentMoniker": "Student\\CourseRegistion.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseRegistion.cs",
+              "RelativeToolTip": "Student\\CourseRegistion.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:44:41.515Z",
+              "WhenOpened": "2024-05-08T07:52:36.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LecturerManager.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\LecturerManager.cs",
-              "RelativeDocumentMoniker": "Admin\\LecturerManager.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\LecturerManager.cs [Design]",
-              "RelativeToolTip": "Admin\\LecturerManager.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "CourseManagement.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseManagement.cs",
+              "RelativeDocumentMoniker": "Student\\CourseManagement.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseManagement.cs",
+              "RelativeToolTip": "Student\\CourseManagement.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAA7wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:44:39.801Z",
+              "WhenOpened": "2024-05-08T07:52:25.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseManagement.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseManagement.cs",
+              "RelativeDocumentMoniker": "Student\\CourseManagement.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseManagement.cs [Design]",
+              "RelativeToolTip": "Student\\CourseManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:52:23.141Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "CourseRegistion.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseRegistion.cs",
+              "RelativeDocumentMoniker": "Student\\CourseRegistion.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\CourseRegistion.cs [Design]",
+              "RelativeToolTip": "Student\\CourseRegistion.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:52:21.219Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAD4v1YAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:25:58.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Main.cs [Design]",
+              "RelativeToolTip": "Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:25:53.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CourseRegistrationStudenLlist.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
+              "RelativeDocumentMoniker": "Admin\\CourseRegistrationStudenLlist.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
+              "RelativeToolTip": "Admin\\CourseRegistrationStudenLlist.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwBAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:20:46.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CourseRegistrationStudenLlist.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs",
+              "RelativeDocumentMoniker": "Admin\\CourseRegistrationStudenLlist.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistrationStudenLlist.cs [Design]",
+              "RelativeToolTip": "Admin\\CourseRegistrationStudenLlist.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:20:43.288Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CourseRegistration.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs",
+              "RelativeDocumentMoniker": "Admin\\CourseRegistration.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\CourseRegistration.cs [Design]",
+              "RelativeToolTip": "Admin\\CourseRegistration.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:20:41.878Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "StudentManager.cs",
               "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
               "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
               "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
               "RelativeToolTip": "Admin\\StudentManager.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAA9AAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAvwMsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:43:32.272Z",
+              "WhenOpened": "2024-05-08T07:18:11.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "StudentManager.cs [Design]",
               "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs",
               "RelativeDocumentMoniker": "Admin\\StudentManager.cs",
               "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Admin\\StudentManager.cs [Design]",
               "RelativeToolTip": "Admin\\StudentManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:43:30.53Z",
+              "WhenOpened": "2024-05-08T07:18:06.685Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "Login\\Login.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Login\\Login.cs [Design]",
-              "RelativeToolTip": "Login\\Login.cs [Design]",
+              "DocumentIndex": 15,
+              "Title": "AddAssignment.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AddAssignment.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AddAssignment.cs [Design]",
+              "RelativeToolTip": "Lecturer\\AddAssignment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T06:49:14.907Z",
+              "WhenOpened": "2024-05-07T12:42:33.166Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Meta.cs",
-              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Source\\Meta.cs",
-              "RelativeDocumentMoniker": "Source\\Meta.cs",
-              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Source\\Meta.cs",
-              "RelativeToolTip": "Source\\Meta.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAnwFcAAAAkAAAA",
+              "DocumentIndex": 0,
+              "Title": "Assigment.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Assigment.cs",
+              "RelativeDocumentMoniker": "Student\\Assigment.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Assigment.cs",
+              "RelativeToolTip": "Student\\Assigment.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAYwEQAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T08:30:32.484Z",
+              "WhenOpened": "2024-05-07T12:02:27.29Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assigment.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Assigment.cs",
+              "RelativeDocumentMoniker": "Student\\Assigment.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Student\\Assigment.cs [Design]",
+              "RelativeToolTip": "Student\\Assigment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:02:25.955Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssignmentManager.cs",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AssignmentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeToolTip": "Lecturer\\AssignmentManager.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAnwIQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T11:53:04.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssignmentManager.cs [Design]",
+              "DocumentMoniker": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs",
+              "RelativeDocumentMoniker": "Lecturer\\AssignmentManager.cs",
+              "ToolTip": "F:\\20232024_2\\T4_0710_LTW\\Final\\FinalProject\\Lecturer\\AssignmentManager.cs [Design]",
+              "RelativeToolTip": "Lecturer\\AssignmentManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T11:53:00.753Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

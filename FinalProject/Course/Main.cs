@@ -126,6 +126,7 @@ namespace FinalProject.Course
             if(Mode.ToLower() == "assignment"){
                 int rowIndex = DGV_DATA.SelectedCells[0].RowIndex;
                 ID = DGV_DATA.Rows[rowIndex].Cells[0].Value.ToString();
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
         }
